@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              Marrom_White_01: "#F5E7DA",
+              Marrom_Medium_01: "#A97744",
+              Marrom_Black_01: "#292625",
+              Marrom_Black_02: "#3B2416",
+              Marrom_Medium_02: "#64221D",
+              Marrom_White_02: "#C7794A",
+              Marrom_White_03: "#CF9A5A",
+              Bright_Color: "#FDF5E3",
+              Marrom_white_00: "#E7E1DF",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        * {
+          font-family: "Archivo";
+        }
+      </style>
+  </head>
+  <body>
+    
+    <header class="bg-Marrom_Black_01 flex items-center justify-between top-0 sticky">
+        <nav class="flex items-center justify-center w-full space-x-4 container mx-auto">
+            <ul class="flex space-x-[36px] justify-center text-Bright_Color p-5 font-normal text-[18px] items-center">
+                <li class=" hover:text-Marrom_White_03 transition-transform duration-500"><a href=""><img src="img/Logo_Horizontal_01.svg" alt=""></li>
+                <li class=" hover:text-Marrom_White_03 transition-transform duration-500 relative hover:text-Marrom_White_02 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-Marrom_White_03 before:transition-all before:duration-300 hover:before:w-full"><a href="">Início</a></li>
+                <li class=" hover:text-Marrom_White_03 transition-transform duration-500 relative hover:text-Marrom_White_02 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-Marrom_White_03 before:transition-all before:duration-300 hover:before:w-full"><a href="">Nosso Café</a></li>
+                <li class=" hover:text-Marrom_White_03 transition-transform duration-500 relative hover:text-Marrom_White_02 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-Marrom_White_03 before:transition-all before:duration-300 hover:before:w-full"><a href="">Notícias</a></li>
+                <li class=" hover:text-Marrom_White_03 transition-transform duration-500 relative hover:text-Marrom_White_02 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-Marrom_White_03 before:transition-all before:duration-300 hover:before:w-full"><a href="">Contato</a></li>
+                <li class=" hover:text-Marrom_White_03 transition-transform duration-500 relative hover:text-Marrom_White_02 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-Marrom_White_03 before:transition-all before:duration-300 hover:before:w-full"><a href="">Cardápio</a></li>
+                 <button class="bg-Marrom_White_02 text-Marrom_White_01 px-[32px] py-[8px] rounded-sm hover:bg-Marrom_Medium_02 transition-colors duration-600">Seja um franqueado</button>
+            </ul>
+             
+        </nav>
+    </header>
+    
+    <section id="banner" class=" bg-Marrom_Black_02 h-[630px] w-full">
+        <div class="absolute items-center justify-start h-full pl-[120px] pt-[120px]">
+            <h1 class="text-[#F7AE1A] text-[55px] font-bold">Um café quentinho <p class="text-Marrom_White_01"> aqui na Tiamate <p class="text-Marrom_White_01"> muda o dia.</h1>
+        <div id="Redes-sociais" class="absolute">
+            <ul class="flex space-x-3 scale-[48px]">
+                <li><a href="https://www.facebook.com/tiamatecoffee/?locale=pt_BR"><img src="img/Facebook.svg" alt="facebook-icon"></a></li>
+                <li><a href=""><img src="img/Instagram.svg" alt=""></a></li>
+                <li><a href=""><img src="img/Youtube.svg" alt=""></a></li>
+                <li><a href=""><img src="img/LinkedIn.svg" alt=""></a></li>
+            </ul>
+        </div>   
+        </div>
+        <img src="img/Banner_principal.png" alt="" class="w-full h-full object-cover">
+    </section>
+  </body>
+</html>
