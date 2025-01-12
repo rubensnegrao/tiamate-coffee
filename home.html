@@ -37,7 +37,7 @@
   </head>
   <body>
     <header
-      class="bg-Marrom_Black_01 flex items-center justify-between top-0 sticky"
+      class="bg-Marrom_Black_01 flex items-center justify-between top-0 sticky z-50"
     >
       <nav
         class="flex items-center justify-center w-full space-x-4 container mx-auto"
@@ -84,9 +84,10 @@
       </nav>
     </header>
 
-    <section id="banner" class="bg-Marrom_Black_02 h-[630px] w-full">
+    <section id="banner" class="bg-Marrom_Black_02 h-[490px] w-full">
       <div
-        class="absolute items-center justify-start h-full pl-[120px] pt-[120px]"
+        id="textos"
+        class="absolute transform translate-x-1/2 translate-y-1/2 text-left"
       >
         <h1 class="text-[#F7AE1A] text-[55px] font-bold">
           Um café quentinho
@@ -119,8 +120,207 @@
       />
     </section>
 
-    <section id="quem-somos" class="w-full bg-Marrom_white_00">
-      <div></div>
+    <section
+      id="quem-somos"
+      class="w-full bg-Marrom_white_00 flex items-center space-x-[55px]"
+    >
+      <img
+        src="img/quem-somos-produtos.png"
+        alt="produtos"
+        class="w-1/2 object-contain"
+      />
+      <div class="w-1/2 px-24">
+        <h6 class="opacity-55">Para os amantes de Café</h6>
+        <h1 class="text-[50px] font-bold text-Marrom_Medium_01 leading-[130%]">
+          Bem-vindo a <br />
+          Tiamate Coffee
+        </h1>
+        <h2 class="leading-[130%] text-Marrom_Black_02 line-clamp-12">
+          A Tiamate Coffee traduz de maneira clara e objetiva o verdadeiro sabor
+          do café e o seu espírito inovador. Visamos fazer parte da vida das
+          pessoas e diferentes culturas, isso é o que nos motiva a oferecer o
+          café mais gostoso. Por isso, selecionamos as melhores plantações, os
+          grãos, os blends e as pessoas que vão colocar a mão na massa para
+          fazer esse delicioso café.
+          <br />
+          Pensamos em fazer os seus momentos mais felizes, seja no café da manhã
+          ou em uma reunião. Individualmente ou entre amigos. À Tiamate Coffee
+          investe em um conceito atual que transmite as pessoas uma sensação de
+          bem estar. Enquanto nosso café aproxima as pessoas, nossos serviços de
+          Wifi gratuito as mantém conectadas. Descubra como navegar na internet
+          enquanto você saboreia um Tiamate.
+        </h2>
+      </div>
+    </section>
+
+    <section
+      id="cultura"
+      class="flex flex-wrap justify-center items-center my-32 space-x-[48px]"
+    >
+      <div
+        id="missao"
+        class="flex flex-col items-start space-y-2 w-[300px] p-[16px]"
+      >
+        <img src="img/missao.svg" alt="título" class="size-[64px]" />
+        <h6 class="uppercase font-bold text-Marrom_Black_02">Missão</h6>
+        <div>
+          <h5 class="text-sm leading-relaxed text-Marrom_Black_02">
+            Fornecer soluções, produtos e serviços de maneira clara e objetiva
+            construindo relacionamentos duradouros com a comunidade, parceiros,
+            colaboradores e sócios, através da criação de valores.
+          </h5>
+        </div>
+      </div>
+
+      <div
+        id="visao"
+        class="flex flex-col items-start space-y-2 w-[300px] p-[16px]"
+      >
+        <img src="img/icon-visao.svg" alt="título" class="size-[64px]" />
+        <h6 class="uppercase font-bold text-Marrom_Black_02">Visão</h6>
+        <div>
+          <h5 class="text-sm leading-relaxed text-Marrom_Black_02">
+            Fornecer soluções, produtos e serviços de maneira clara e objetiva
+            construindo relacionamentos duradouros com a comunidade, parceiros,
+            colaboradores e sócios, através da criação de valores.
+          </h5>
+        </div>
+      </div>
+
+      <div
+        id="valores"
+        class="flex flex-col items-start space-y-2 w-[300px] p-[16px]"
+      >
+        <img src="img/icon-valores.svg" alt="título" class="size-[64px]" />
+        <h6 class="uppercase font-bold text-Marrom_Black_02">valores</h6>
+        <div>
+          <h5 class="text-sm leading-relaxed text-Marrom_Black_02">
+            Fornecer soluções, produtos e serviços de maneira clara e objetiva
+            construindo relacionamentos duradouros com a comunidade, parceiros,
+            colaboradores e sócios, através da criação de valores.
+          </h5>
+        </div>
+      </div>
+    </section>
+
+    <section id="video" class="m-32 space-y-[64px]">
+      <h1 class="text-Marrom_Medium_01 text-[50px] font-bold">
+        Coisas boas acontecem àqueles <br />
+        que gostam de café
+      </h1>
+      <div class="relative overflow-hidden rounded-lg shadow-lg aspect-video">
+        <iframe
+          class="absolute top-0 left-0 w-full h-full"
+          src="https://www.youtube.com/embed/RWCP7z8ufiA?si=P7JhHxFhV6T6vb5I"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <section id="banner2" class="relative">
+      <div
+        class="absolute top-1/2 left-[150px] transform -translate-y-1/2 text-left"
+      >
+        <h1 class="text-Marrom_Medium_01 font-semibold text-[50px]">
+          Café autêntico
+        </h1>
+        <p class="text-[50px] text-Marrom_White_01">
+          Chegou nosso café! <br />
+          Direto da fazenda.
+        </p>
+      </div>
+      <img class="w-full h-full" src="img/banner-autentico.png" alt="" />
+    </section>
+
+    <section id="Instagram" class="m-24 space-y-[64px] w-f">
+      <div class="flex items-center justify-between mx-[150px]">
+        <div>
+          <h6>Para você e seus amigos</h6>
+          <h1 class="text-[50px] text-Marrom_Medium_01 font-bold">
+            Ambiente agradável
+          </h1>
+        </div>
+        <!-- <div class="flex space-x-[16px] items-center">
+          <h1 class="font-bold text-Marrom_Black_02">Veja mais</h1>
+          <a href="https://www.instagram.com/tiamatefortaleza/"
+            ><img src="img/Instagram.svg" alt="" class="scale-[60px]"
+          /></a>
+        </div> -->
+        <button
+          class="flex items-center space-x-[16px] text-Marrom_Medium_02 uppercase font-bold"
+        >
+          <a href="https://www.instagram.com/tiamatefortaleza/">Veja mais</a>
+          <img src="img/Instagram.svg" alt="" />
+        </button>
+      </div>
+      <div class="flex justify-center flex-wrap">
+        <div class="w-[390px] h-[390px] bg-Marrom_Medium_02">
+          <img
+            src="img/instagram-1.jpeg"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="w-[390px] h-[390px] bg-Marrom_Medium_02">
+          <img
+            src="img/instagram-2.jpeg"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="w-[390px] h-[390px] bg-Marrom_Medium_02">
+          <img
+            src="img/instagram-3.jpeg"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="w-[390px] h-[390px] bg-Marrom_Medium_02">
+          <img
+            src="img/instagram-4.jpeg"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="w-[390px] h-[390px] bg-Marrom_Medium_02">
+          <img
+            src="img/instagram-5.jpeg"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="w-[390px] h-[390px] bg-Marrom_Medium_02">
+          <img
+            src="img/instagram-6.jpeg"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="cardapio" class="">
+      <div>
+        <div class="text-center">
+          <h6 class="text-Marrom_Black_01">Confira nosso</h6>
+          <h1 class="text-[50px] font-bold text-Marrom_Medium_01">Cardápio</h1>
+        </div>
+        <div class="justify-center items-center flex">
+          <div class="bg-transparent w-[200px] h-[280px]">
+            <img src="img/Bebidas/coockies.png" alt="" />
+          </div>
+          <div class="bg-transparent w-[200px] h-[280px]">
+            <img src="img/Bebidas/frape-morango.png" alt="" />
+          </div>
+          <div class="bg-transparent w-[200px] h-[280px]">
+            <img src="img/Bebidas/chocolate.png" alt="" />
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
