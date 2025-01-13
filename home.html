@@ -228,7 +228,7 @@
         <h1 class="text-Marrom_Medium_01 font-semibold text-[50px]">
           Café autêntico
         </h1>
-        <p class="text-[50px] text-Marrom_White_01">
+        <p class="text-[36px] text-Marrom_White_01">
           Chegou nosso café! <br />
           Direto da fazenda.
         </p>
@@ -244,12 +244,6 @@
             Ambiente agradável
           </h1>
         </div>
-        <!-- <div class="flex space-x-[16px] items-center">
-          <h1 class="font-bold text-Marrom_Black_02">Veja mais</h1>
-          <a href="https://www.instagram.com/tiamatefortaleza/"
-            ><img src="img/Instagram.svg" alt="" class="scale-[60px]"
-          /></a>
-        </div> -->
         <button
           class="flex items-center space-x-[16px] text-Marrom_Medium_02 uppercase font-bold"
         >
@@ -300,27 +294,55 @@
             class="w-full h-full object-cover"
           />
         </div>
+        <div class="h-[300px] w-full bg-Marrom_White_01 flex items-end justify-end absolute"></div>
       </div>
     </section>
 
-    <section id="cardapio" class="">
+    <section id="cardapio" class="bg-Marrom_White_01 h-[500px] w-full flex items-center justify-center">
       <div>
-        <div class="text-center">
+        <div class="text-center justify-center items-center my-16">
           <h6 class="text-Marrom_Black_01">Confira nosso</h6>
           <h1 class="text-[50px] font-bold text-Marrom_Medium_01">Cardápio</h1>
-        </div>
-        <div class="justify-center items-center flex">
+        <!-- </div>
+        <div class="flex justify-center items-center">
+          <box-icon name='chevron-left'></box-icon>
           <div class="bg-transparent w-[200px] h-[280px]">
             <img src="img/Bebidas/coockies.png" alt="" />
           </div>
           <div class="bg-transparent w-[200px] h-[280px]">
             <img src="img/Bebidas/frape-morango.png" alt="" />
           </div>
-          <div class="bg-transparent w-[200px] h-[280px]">
+          <div class="bg-transparent w-[200px] h-[280px] flex">
             <img src="img/Bebidas/chocolate.png" alt="" />
+          <box-icon name='chevron-right'></box-icon>
           </div>
+        </div> -->
+        <div class="flex items-center justify-center space-x-4">
+          <!-- Ícone à esquerda -->
+          <div class="flex items-center">
+            <box-icon name="chevron-left"></box-icon>
+          </div>
+        
+          <!-- Imagens -->
+          <div class="flex space-x-4">
+            <div class="bg-transparent w-[200px] h-[280px] flex items-center justify-center">
+              <img src="img/Bebidas/coockies.png" alt="" />
+            </div>
+            <div class="bg-transparent w-[200px] h-[280px] flex items-center justify-center">
+              <img src="img/Bebidas/frape-morango.png" alt="" />
+            </div>
+            <div class="bg-transparent w-[200px] h-[280px] flex items-center justify-center">
+              <img src="img/Bebidas/chocolate.png" alt="" />
+            </div>
+          </div>
+          <div class="flex items-center">
+            <box-icon name="chevron-right"></box-icon>
+          </div>
+          <button class="py-[8px] px-[64px] bg-Marrom_Black_02 text-Marrom_White_01 rounded-md py-[8px] px-[64px] bg-Marrom_Black_02 text-Marrom_White_01 rounded-md hover:bg-Marrom_Medium_01 transition-colors duration-500">Veja mais</button>
         </div>
+        
       </div>
     </section>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </body>
 </html>
