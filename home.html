@@ -37,10 +37,10 @@
   </head>
   <body>
     <header
-      class="bg-Marrom_Black_01 flex items-center justify-between top-0 sticky z-50"
+      class="bg-Marrom_Black_01 flex px-[150px] items-center justify-between top-0 sticky z-50"
     >
       <nav
-        class="flex items-center justify-center w-full space-x-4 container mx-auto"
+        class="flex items-center justify-between w-full space-x-4 container mx-auto"
       >
         <ul
           class="flex space-x-[36px] justify-center text-Bright_Color p-5 font-normal text-[18px] items-center"
@@ -84,74 +84,46 @@
       </nav>
     </header>
 
-    <section id="banner" class="bg-Marrom_Black_02 h-[490px] w-full">
-      <div
-        id="textos"
-        class="absolute transform translate-x-1/2 translate-y-1/2 text-left"
-      >
-        <h1 class="text-[#F7AE1A] text-[55px] font-bold">
-          Um café quentinho
-          <p class="text-Marrom_White_01">aqui na Tiamate</p>
-          <p class="text-Marrom_White_01">muda o dia.</p>
-        </h1>
-        <div id="Redes-sociais" class="absolute">
-          <ul class="flex space-x-3 scale-[48px]">
-            <li>
-              <a href="https://www.facebook.com/tiamatecoffee/?locale=pt_BR"
-                ><img src="img/Facebook.svg" alt="facebook-icon"
-              /></a>
-            </li>
-            <li>
-              <a href=""><img src="img/Instagram.svg" alt="" /></a>
-            </li>
-            <li>
-              <a href=""><img src="img/Youtube.svg" alt="" /></a>
-            </li>
-            <li>
-              <a href=""><img src="img/LinkedIn.svg" alt="" /></a>
-            </li>
-          </ul>
+        <section id="banner" class="relative">
+      <img src="img/Banner_principal.png" alt="" class="w-full h-[500px] bg-marrom_black_02 object-cover">
+      <div class="absolute top-[110px] left-[135px]">
+        <h2 class="text-marrom_white_01 text-[55px] font-bold leading-[65px] text-Marrom_White_01"><span class="text-[#F7AE1A]">Um café quentinho</span><br> aqui na Tiamate<br>
+          muda o dia.</h2>
+          <div class="flex gap-4">
+            <a href=""> <img src="img/Facebook.svg" alt=""></a>
+            <a href=""> <img src="img/Instagram.svg" alt=""></a>
+            <a href=""> <img src="img/Youtube.svg" alt=""></a>
+            <a href=""> <img src="img/LinkedIn.svg" alt=""></a>
+          </div>
+      </div>
+    </section>
+    
+    <section id="bem-vindo">
+    <div class="bg-[#f5f0ec] py-12">
+      <div class="container mx-auto flex flex-col md:flex-row items-center gap-8">
+        <!-- Imagem -->
+        <div class="flex-1">
+          <img src="img/quem-somos-produtos.png" alt="Tiamate Coffee" class="w-full">
+        </div>
+    
+        <!-- Conteúdo de texto -->
+        <div class="flex-1 text-center md:text-left">
+          <p class="text-sm text-[#a87a5f] font-medium">Para os amantes de café</p>
+          <h1 class="text-4xl font-bold text-[#a87a5f] leading-tight mt-2">
+            Bem-vindo a<br>
+            Tiamate Coffee
+          </h1>
+          <p class="text-sm text-[#5a4943] leading-relaxed mt-4">
+            A Tiamate Coffee traduz de maneira clara e objetiva o verdadeiro sabor do café e o seu espírito inovador. Visamos fazer parte da vida das pessoas e diferentes culturas, isso é o que nos motiva a oferecer o café mais gostoso. Por isso, selecionamos as melhores plantações, os grãos, os blends e as pessoas que vão colocar a mão na massa para fazer esse delicioso café.
+          </p>
+          <p class="text-sm text-[#5a4943] leading-relaxed mt-4 py-4">
+            Pensamos em fazer os seus momentos mais felizes, seja no café da manhã ou em uma reunião. Individualmente ou entre amigos. A Tiamate Coffee investe em um conceito atual que transmite às pessoas uma sensação de bem-estar. Enquanto nosso café aproxima as pessoas, nossos serviços de WiFi gratuito as mantêm conectadas. Descubra como navegar na internet enquanto você saboreia um Tiamate.
+          </p>
+          <button class=" text-[] bg-Marrom_Black_02 text-Marrom_White_01 px-4 py-2 rounded-sm hover:bg-Marrom_Medium_01 duration-300">Mais sobre nós</button>
         </div>
       </div>
-      <img
-        src="img/Banner_principal.png"
-        alt=""
-        class="w-full h-full object-cover"
-      />
-    </section>
-
-    <section
-      id="quem-somos"
-      class="w-full bg-Marrom_white_00 flex items-center space-x-[55px]"
-    >
-      <img
-        src="img/quem-somos-produtos.png"
-        alt="produtos"
-        class="w-1/2 object-contain"
-      />
-      <div class="w-1/2 px-24">
-        <h6 class="opacity-55">Para os amantes de Café</h6>
-        <h1 class="text-[50px] font-bold text-Marrom_Medium_01 leading-[130%]">
-          Bem-vindo a <br />
-          Tiamate Coffee
-        </h1>
-        <h2 class="leading-[130%] text-Marrom_Black_02 line-clamp-12">
-          A Tiamate Coffee traduz de maneira clara e objetiva o verdadeiro sabor
-          do café e o seu espírito inovador. Visamos fazer parte da vida das
-          pessoas e diferentes culturas, isso é o que nos motiva a oferecer o
-          café mais gostoso. Por isso, selecionamos as melhores plantações, os
-          grãos, os blends e as pessoas que vão colocar a mão na massa para
-          fazer esse delicioso café.
-          <br />
-          Pensamos em fazer os seus momentos mais felizes, seja no café da manhã
-          ou em uma reunião. Individualmente ou entre amigos. À Tiamate Coffee
-          investe em um conceito atual que transmite as pessoas uma sensação de
-          bem estar. Enquanto nosso café aproxima as pessoas, nossos serviços de
-          Wifi gratuito as mantém conectadas. Descubra como navegar na internet
-          enquanto você saboreia um Tiamate.
-        </h2>
-      </div>
-    </section>
+    </div>
+    
 
     <section
       id="cultura"
@@ -203,14 +175,13 @@
       </div>
     </section>
 
-    <section id="video" class="m-32 space-y-[64px]">
-      <h1 class="text-Marrom_Medium_01 text-[50px] font-bold">
-        Coisas boas acontecem àqueles <br />
-        que gostam de café
-      </h1>
+    <section id="video" class="">
+      <h1 class=" text-2xl md:text-4xl font-bold text-Marrom_Black_02 text-left px-4 mb-6">
+        Coisas boas acontecem àqueles <br> que gostam de café
+      </h1>    
       <div class="relative overflow-hidden rounded-lg shadow-lg aspect-video">
         <iframe
-          class="absolute top-0 left-0 w-full h-full"
+          class="absolute top-0 left-0 w-full h-full p-4 rounded-lg"
           src="https://www.youtube.com/embed/RWCP7z8ufiA?si=P7JhHxFhV6T6vb5I"
           title="YouTube video player"
           frameborder="0"
@@ -221,7 +192,7 @@
       </div>
     </section>
 
-    <section id="banner2" class="relative">
+    <!-- <section id="banner2" class="relative h-full">
       <div
         class="absolute top-1/2 left-[150px] transform -translate-y-1/2 text-left"
       >
@@ -234,6 +205,14 @@
         </p>
       </div>
       <img class="w-full h-full" src="img/banner-autentico.png" alt="" />
+    </section> -->
+
+    <section id="banner2" class="relative">
+      <img src="img/banner-autentico.png" alt="" class="w-full h-[500px] bg-marrom_black_02 object-cover">
+      <div class="absolute top-[110px] left-[135px]">
+        <h2 class="text-marrom_white_01 text-[55px] leading-[65px] text-Marrom_White_01"><span class="text-[#F7AE1A] font-bold">café autêntico</span><br>Chegou nosso café!<br>
+          Direto da fazenda.</h2>
+      </div>
     </section>
 
     <section id="Instagram" class="m-24 space-y-[64px] w-f">
@@ -245,7 +224,7 @@
           </h1>
         </div>
         <button
-          class="flex items-center space-x-[16px] text-Marrom_Medium_02 uppercase font-bold"
+          class="flex truncate items-center space-x-[16px] text-Marrom_Medium_02 uppercase font-bold"
         >
           <a href="https://www.instagram.com/tiamatefortaleza/">Veja mais</a>
           <img src="img/Instagram.svg" alt="" />
@@ -294,7 +273,7 @@
             class="w-full h-full object-cover"
           />
         </div>
-        <div class="h-[300px] w-full bg-Marrom_White_01 flex items-end justify-end absolute"></div>
+        <div id="detalhe-instagram" class="h-[300px] w-full bg-Marrom_White_01 flex items-end absolute -z-50"></div>
       </div>
     </section>
 
@@ -338,11 +317,306 @@
           <div class="flex items-center">
             <box-icon name="chevron-right"></box-icon>
           </div>
-          <button class="py-[8px] px-[64px] bg-Marrom_Black_02 text-Marrom_White_01 rounded-md py-[8px] px-[64px] bg-Marrom_Black_02 text-Marrom_White_01 rounded-md hover:bg-Marrom_Medium_01 transition-colors duration-500">Veja mais</button>
         </div>
-        
+        <button class="py-[8px] px-[64px] font-semibold bg-Marrom_White_03 text-Marrom_Black_01 rounded-sm py-[8px] px-[64px] bg-Marrom_Black_02 text-Marrom_White_01 hover:bg-Marrom_Medium_01 transition-colors duration-300">Veja mais</button>
       </div>
     </section>
+
+    <!-- <section id="franquias" class="bg-Marrom_Black_02 flex">
+      <div>
+        <div class="w-[50%]">
+          <h6 class="text-[16px] text-Marrom_White_03">Entre em contato</h6>
+          <h1 class="text-[50px] font-bold text-Marrom_White_01">Abra sua franquia</h1>
+          <h6 class="text-[16px] text-Marrom_White_03">Preencha o formulário abaixo que entraremos em contato com você o mais rápido possível.</h6>
+        </div>
+        <img src="img/img-franquias.png" alt="" class="">
+      </div>
+    </section> -->
+
+    <section id="contato" class="flex h-screen">
+      <div class="flex-1 bg-Marrom_Black_02 p-4 md:pl-[135px] md:pt-[70px] md:pr-[70px]">
+        <h6 class="text-Marrom_White_01 text-[18px]">Entre em contato</h6>
+        <h2 class="text-Marrom_White_01 text-[50px] font-bold mb-[20px]">Abra sua Franquia</h2>
+        <p class="text-Marrom_White_01">Preencha o formulário abaixo que entraremos em contato com você o mais rápido
+          possível.</p>
+        <form class="mt-[20px] justify-center">
+          <div class="bg-Marrom_White_01 rounded-md px-[9px] py-[14px] flex gap-[9px] mb-[10px]">
+            <div class="bg-Marrom_White_02 w-[32px] h-[32px] flex justify-center items-center rounded-full">
+              <img src="img/icon1.svg" alt="nome">
+            </div>
+            <input type="text" placeholder="Nome e Sobrenome"
+              class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01">
+          </div>
+          <div class="bg-Marrom_White_01 rounded-md px-[9px] py-[14px] flex gap-[9px] mb-[10px]">
+            <div class="bg-Marrom_White_02 w-[32px] h-[32px] flex justify-center items-center rounded-full">
+              <img src="img/icon2.svg" alt="nome">
+            </div>
+            <input type="email" placeholder="email@exemplo.com"
+              class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01">
+          </div>
+          <div class="bg-Marrom_White_01 rounded-md px-[9px] py-[14px] flex gap-[9px] mb-[10px]">
+            <div class="bg-Marrom_White_02 w-[32px] h-[32px] flex justify-center items-center rounded-full">
+              <img src="img/icon3.svg" alt="nome">
+            </div>
+            <input id="telefone" type="text" placeholder="(00) 00000-0000"
+              class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01">
+          </div>
+          <div class="flex gap-[10px]">
+            <div class="flex-1 bg-Marrom_White_01 rounded-md px-[9px] py-[14px] flex gap-[9px] mb-[10px]">
+              <div class="bg-Marrom_White_02 w-[32px] h-[32px] flex justify-center items-center rounded-full">
+                <img src="img/icon4.svg" alt="nome">
+              </div>
+              <select id="lista_estados" class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01"
+                onchange="carregarCidades()">
+                <option disabled selected>UF</option>
+              </select>
+            </div>
+            <div class="flex-1 bg-Marrom_White_01 rounded-md px-[9px] py-[14px] flex gap-[9px] mb-[10px]">
+              <div class="bg-Marrom_White_02 w-[32px] h-[32px] flex justify-center items-center rounded-full">
+                <img src="img/icon5.svg" alt="nome">
+              </div>
+              <!-- <select id="lista_cidades" class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01">
+                <option disabled selected>Cidade</option>
+              </select> -->
+              <input list="lista_cidades" type="text" placeholder="Cidade"
+                class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01">
+              <datalist id="lista_cidades"></datalist>
+            </div>
+          </div>
+          <div class="bg-Marrom_White_01 rounded-md px-[9px] py-[14px] flex gap-[9px] mb-[10px]">
+            <div class="bg-Marrom_White_02 w-[32px] h-[32px] flex justify-center items-center rounded-full">
+              <img src="img/icon6.svg" alt="nome">
+            </div>
+            <select class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01">
+              <option disabled selected>Como conheceu a Tiamate?</option>
+              <option>Facebook</option>
+              <option>Instagram</option>
+              <option>Linkedin</option>
+              <option>Google</option>
+              <option>Outros</option>
+            </select>
+          </div>
+          <button
+            class="w-full bg-Marrom_White_02 hover:bg-marrom_medium_01 text-marrom_black_02 duration-200 px-[9px] py-[14px] rounded-md font-semibold">Enviar
+            Cadastro</button>
+        </form>
+      </div>
+      <img src="img/fachada-tiamate.png" alt="fachada tiamate" class="hidden md:block">
+    </section>
+
+  </section>
+  <section id="depoimentos" class="pt-[130px] pb-[132px]">
+    <h6 class="text-Marrom_Black_01 text-[18px] text-center">Depoimentos</h6>
+    <h2 class="text-Marrom_Medium_01 text-[50px] font-bold text-center mb-[40px]">Tudo sobre Tiamate Coffee</h2>
+    <div class="relative">
+      <img src="img/atendente.png" alt="atendente entregando café" class="h-[420px]">
+      <div class="w-9/12 absolute top-1/2 right-0 -translate-y-1/2 overflow-hidden">
+        <div id="cards" class="w-[2610px] flex gap-[42px] relative left-0 duration-200">
+          <div class="w-[400px] pt-[58px] px-[37px] pb-[32px] bg-Marrom_white_00 rounded-[7px]">
+            <div class="flex gap-1 mb-[15px]">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+            </div>
+            <p class="text-Marrom_Black_02">O café é realmente bom, e os salgados também (pedi um croissant de 4
+              queijos). Já havia pedido antes via iFood mas resolvi fazer uma visita enquanto andava pelo Centro, o
+              café fica mesmo ao lado da Praça do Ferreira. Vale a pena dar uma visitada quando quiser se refrescar
+              com um café gelado deles ou tomar um café da manhã por lá.</p>
+            <div class="flex gap-4 items-center mt-3">
+              <img src="img/kalil.png" alt="Kalil Sousa" class="size-[65px]">
+              <h6 class="text-Marrom_Medium_02 font-semibold">Kalil Sousa</h6>
+            </div>
+          </div>
+          <div class="w-[400px] pt-[58px] px-[37px] pb-[32px] bg-Marrom_white_00 rounded-[7px]">
+            <div class="flex gap-1 mb-[15px]">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+            </div>
+            <p class="text-Marrom_Black_02">O café é realmente bom, e os salgados também (pedi um croissant de 4
+              queijos). Já havia pedido antes via iFood mas resolvi fazer uma visita enquanto andava pelo Centro, o
+              café fica mesmo ao lado da Praça do Ferreira. Vale a pena dar uma visitada quando quiser se refrescar
+              com um café gelado deles ou tomar um café da manhã por lá.</p>
+            <div class="flex gap-4 items-center mt-3">
+              <img src="img/kalil.png" alt="Kalil Sousa" class="size-[65px]">
+              <h6 class="text-Marrom_Medium_02 font-semibold">Kalil Sousa</h6>
+            </div>
+          </div>
+          <div class="w-[400px] pt-[58px] px-[37px] pb-[32px] bg-Marrom_white_00 rounded-[7px]">
+            <div class="flex gap-1 mb-[15px]">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+            </div>
+            <p class="text-Marrom_Black_02">O café é realmente bom, e os salgados também (pedi um croissant de 4
+              queijos). Já havia pedido antes via iFood mas resolvi fazer uma visita enquanto andava pelo Centro, o
+              café fica mesmo ao lado da Praça do Ferreira. Vale a pena dar uma visitada quando quiser se refrescar
+              com um café gelado deles ou tomar um café da manhã por lá.</p>
+            <div class="flex gap-4 items-center mt-3">
+              <img src="img/kalil.png" alt="Kalil Sousa" class="size-[65px]">
+              <h6 class="text-Marrom_Medium_02 font-semibold">Kalil Sousa</h6>
+            </div>
+          </div>
+          <div class="w-[400px] pt-[58px] px-[37px] pb-[32px] bg-Marrom_white_00 rounded-[7px]">
+            <div class="flex gap-1 mb-[15px]">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+            </div>
+            <p class="text-Marrom_Black_02">O café é realmente bom, e os salgados também (pedi um croissant de 4
+              queijos). Já havia pedido antes via iFood mas resolvi fazer uma visita enquanto andava pelo Centro, o
+              café fica mesmo ao lado da Praça do Ferreira. Vale a pena dar uma visitada quando quiser se refrescar
+              com um café gelado deles ou tomar um café da manhã por lá.</p>
+            <div class="flex gap-4 items-center mt-3">
+              <img src="img/kalil.png" alt="Kalil Sousa" class="size-[65px]">
+              <h6 class="text-Marrom_Medium_02 font-semibold">Kalil Sousa</h6>
+            </div>
+          </div>
+          <div class="w-[400px] pt-[58px] px-[37px] pb-[32px] bg-Marrom_white_00 rounded-[7px]">
+            <div class="flex gap-1 mb-[15px]">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+            </div>
+            <p class="text-Marrom_Black_02">O café é realmente bom, e os salgados também (pedi um croissant de 4
+              queijos). Já havia pedido antes via iFood mas resolvi fazer uma visita enquanto andava pelo Centro, o
+              café fica mesmo ao lado da Praça do Ferreira. Vale a pena dar uma visitada quando quiser se refrescar
+              com um café gelado deles ou tomar um café da manhã por lá.</p>
+            <div class="flex gap-4 items-center mt-3">
+              <img src="img/kalil.png" alt="Kalil Sousa" class="size-[65px]">
+              <h6 class="text-Marrom_Medium_02 font-semibold">Kalil Sousa</h6>
+            </div>
+          </div>
+          <div class="w-[400px] pt-[58px] px-[37px] pb-[32px] bg-Marrom_white_00 rounded-[7px]">
+            <div class="flex gap-1 mb-[15px]">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+            </div>
+            <p class="text-Marrom_Black_02">O café é realmente bom, e os salgados também (pedi um croissant de 4
+              queijos). Já havia pedido antes via iFood mas resolvi fazer uma visita enquanto andava pelo Centro, o
+              café fica mesmo ao lado da Praça do Ferreira. Vale a pena dar uma visitada quando quiser se refrescar
+              com um café gelado deles ou tomar um café da manhã por lá.</p>
+            <div class="flex gap-4 items-center mt-3">
+              <img src="img/kalil.png" alt="Kalil Sousa" class="size-[65px]">
+              <h6 class="text-Marrom_Medium_02 font-semibold">Kalil Sousa</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-end gap-4 pr-[135px]">
+      <div id="anterior"
+        class="w-[50px] h-[50px] bg-marrom_white_03 hover:bg-Marrom_Black_02 text-Marrom_Black_01 flex justify-center items-center rounded-full">
+        A</div>
+      <div 
+        id="proximo"
+        onclick="proximoDepoimento()"
+        class="w-[50px] h-[50px] bg-marrom_white_03 hover:bg-Marrom_Black_02 text-Marrom_Black_01 flex justify-center items-center rounded-full">
+        P</div>
+    </div>
+  </section>
+
+  <!-- <footer class="flex justify-between bg-Marrom_Black_01">
+      <img src="img/Logo_Horizontal_01.svg" alt="">
+      <div class="gap-4 flex text-Marrom_White_01">
+        <a href="">Início</a>
+        <a href="">Nosso café</a>
+        <a href="">Notícias</a>
+        <a href="">Contato</a>
+        <a href="">Cardápio</a>
+        <a href="">Franquia</a>
+      </div>
+      <div class="border-t border-Marrom_White_03 my-6 mx-6 sm:mx-12"></div>
+      <div class="flex flex-col sm:flex-row items-center sm:justify-between px-6 sm:px-12"> -->
+        <!-- Social Media -->
+        <!-- <div class="flex flex-col items-center sm:items-start">
+          <p class="mb-2 text-sm">Curta e Compartilhe</p>
+          <div class="flex gap-4">
+            <a href="#" class="p-2 bg-[#a87a5f] rounded-full">
+              <img src="img/Facebook.svg" alt="Facebook" class="h-5">
+            </a>
+            <a href="#" class="p-2 bg-[#a87a5f] rounded-full">
+              <img src="img/Instagram.svg" alt="Instagram" class="h-5">
+            </a>
+            <a href="#" class="p-2 bg-[#a87a5f] rounded-full">
+              <img src="img/Youtube.svg" alt="YouTube" class="h-5">
+            </a>
+            <a href="#" class="p-2 bg-[#a87a5f] rounded-full">
+              <img src="img/LinkedIn.svg" alt="LinkedIn" class="h-5">
+            </a>
+          </div>
+        </div>
+  </footer> -->
+<footer>
+  <div class="bg-Marrom_Black_01 text-Marrom_White_01 py-6">
+    <!-- Header -->
+    <div class="flex flex-col items-center sm:flex-row sm:justify-between px-6 sm:px-12 gap-4">
+      <!-- Logo -->
+      <div class="flex items-center gap-2">
+        <img src="img/Logo_Horizontal_01.svg" alt="Tiamate Coffee" class="h-10">
+      </div>
+      <!-- Menu -->
+      <nav class="mt-4 sm:mt-0">
+        <ul class="flex gap-4 sm:gap-8 text-sm sm:text-base">
+          <li><a href="#" class="hover:text-Marrom_White_02">Início</a></li>
+          <li><a href="#" class="hover:text-Marrom_White_02">Nosso Café</a></li>
+          <li><a href="#" class="hover:text-Marrom_White_02">Notícias</a></li>
+          <li><a href="#" class="hover:text-Marrom_White_02">Contato</a></li>
+          <li><a href="#" class="hover:text-Marrom_White_02">Cardápio</a></li>
+          <li><a href="#" class="hover:text-Marrom_White_02">Franquia</a></li>
+        </ul>
+      </nav>
+    </div>
+  
+    <div class="border-t border-Marrom_White_02 my-8 mx-8 sm:mx-12"></div>
+  
+    <div class="flex flex-col sm:flex-row items-center sm:justify-between px-6 sm:px-12">
+
+      <div class="flex flex-col items-center sm:items-start">
+
+        <div class="flex gap-4">
+          <p class="mb-2 text-sm">Curta e <br>Compartilhe</p>
+          <a href="#" class="p-2 bg-Marrom_Black_01 rounded-full">
+            <img src="img/Facebook.svg" alt="Facebook" class="h-8 w-8">
+          </a>
+          <a href="#" class="p-2 bg-Marrom_Black_01 rounded-full">
+            <img src="img/Instagram.svg" alt="Instagram" class="h-8 w-8">
+          </a>
+          <a href="#" class="p-2 bg-Marrom_Black_01 rounded-full">
+            <img src="img/Youtube.svg" alt="YouTube" class="h-8 w-8">
+          </a>
+          <a href="#" class="p-2 bg-Marrom_Black_01 rounded-full">
+            <img src="img/LinkedIn.svg" alt="LinkedIn" class="h-8 w-8">
+          </a>
+        </div>
+      </div>
+  
+
+      <div class="mt-6 sm:mt-0 text-center sm:text-right">
+        <p class="text-sm">&copy; 2021 Tiamate - Todos os Direitos Reservados</p>
+      </div>
+  
+
+      <div class="mt-6 sm:mt-0">
+        <img src="img/grupo-gracom.svg" alt="Grupo Gracom" class="h-10">
+      </div>
+    </div>
+  </div>
+  </footer>
+
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </body>
 </html>
