@@ -36,236 +36,768 @@
     </style>
   </head>
   <body>
+    <!-- <header
+      class="bg-Marrom_Black_01 flex px-[150px] items-center justify-between top-0 sticky z-50"
+    >
+      <nav
+        class="flex items-center justify-between w-full space-x-4 container mx-auto"
+      >
+        <ul
+          class="flex space-x-[36px] justify-center text-Bright_Color p-5 font-normal text-[18px] items-center"
+        >
+          <li
+            class="hover:text-Marrom_White_03 transition-transform duration-500"
+          >
+            <a href=""><img src="img/Logo_Horizontal_01.svg" alt="" /></a>
+          </li>
+          <li
+            class="hover:text-Marrom_White_03 transition-transform duration-500 relative hover:text-Marrom_White_02 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-Marrom_White_03 before:transition-all before:duration-300 hover:before:w-full py-2"
+          >
+            <a href="">Início</a>
+          </li>
+          <li
+            class="hover:text-Marrom_White_03 transition-transform duration-500 relative hover:text-Marrom_White_02 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-Marrom_White_03 before:transition-all before:duration-300 hover:before:w-full py-2"
+          >
+            <a href="">Nosso Café</a>
+          </li>
+          <li
+            class="hover:text-Marrom_White_03 transition-transform duration-500 relative hover:text-Marrom_White_02 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-Marrom_White_03 before:transition-all before:duration-300 hover:before:w-full py-2"
+          >
+            <a href="">Notícias</a>
+          </li>
+          <li
+            class="hover:text-Marrom_White_03 transition-transform duration-500 relative hover:text-Marrom_White_02 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-Marrom_White_03 before:transition-all before:duration-300 hover:before:w-full py-2"
+          >
+            <a href="">Contato</a>
+          </li>
+          <li
+            class="hover:text-Marrom_White_03 transition-transform duration-500 relative hover:text-Marrom_White_02 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-Marrom_White_03 before:transition-all before:duration-300 hover:before:w-full py-2"
+          >
+            <a href="">Cardápio</a>
+          </li>
+        </ul>
+        <button
+          class="bg-Marrom_White_02 text-Marrom_White_01 px-[32px] py-[8px] rounded-sm hover:bg-Marrom_Medium_02 transition-colors duration-600"
+        >
+          Seja um franqueado
+        </button>
+      </nav>
+    </header> -->
 
     <header
-    class="bg-Marrom_Black_01 flex px-[150px] items-center justify-between top-0 sticky z-50"
-  >
-    <nav
-      class="flex items-center justify-between w-full space-x-4 container mx-auto"
+  class="bg-Marrom_Black_01 flex items-center justify-between top-0 sticky z-50 px-4 md:px-[150px] py-4"
+>
+  <nav class="flex items-center justify-between w-full container mx-auto">
+    <!-- Logo -->
+    <a href="">
+      <img src="img/Logo_Horizontal_01.svg" alt="Logo" class="w-32 md:w-auto" />
+    </a>
+
+    <!-- Botão de Menu (mobile) -->
+    <button
+      id="menuButton"
+      class="md:hidden text-Bright_Color hover:text-Marrom_White_03 focus:outline-none"
     >
-      <ul
-        class="flex space-x-[36px] justify-center text-Bright_Color p-5 font-normal text-[18px] items-center"
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        stroke="currentColor"
+        class="w-8 h-8"
       >
-        <li
-          class="hover:text-Marrom_White_03 transition-transform duration-500"
-        >
-          <a href=""><img src="img/Logo_Horizontal_01.svg" alt="" /></a>
-        </li>
-        <li
-          class="hover:text-Marrom_White_03 transition-transform duration-500 relative hover:text-Marrom_White_02 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-Marrom_White_03 before:transition-all before:duration-300 hover:before:w-full py-2"
-        >
-          <a href="">Início</a>
-        </li>
-        <li
-          class="hover:text-Marrom_White_03 transition-transform duration-500 relative hover:text-Marrom_White_02 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-Marrom_White_03 before:transition-all before:duration-300 hover:before:w-full py-2"
-        >
-          <a href="">Nosso Café</a>
-        </li>
-        <li
-          class="hover:text-Marrom_White_03 transition-transform duration-500 relative hover:text-Marrom_White_02 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-Marrom_White_03 before:transition-all before:duration-300 hover:before:w-full py-2"
-        >
-          <a href="">Notícias</a>
-        </li>
-        <li
-          class="hover:text-Marrom_White_03 transition-transform duration-500 relative hover:text-Marrom_White_02 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-Marrom_White_03 before:transition-all before:duration-300 hover:before:w-full py-2"
-        >
-          <a href="">Contato</a>
-        </li>
-        <li
-          class="hover:text-Marrom_White_03 transition-transform duration-500 relative hover:text-Marrom_White_02 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-Marrom_White_03 before:transition-all before:duration-300 hover:before:w-[70% ] py-2"
-        >
-          <a href="">Cardápio</a>
-        </li>
-      </ul>
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M4 6h16M4 12h16m-7 6h7"
+        />
+      </svg>
+    </button>
+
+    <!-- Navegação -->
+    <ul
+      id="navMenu"
+      class="hidden md:flex space-x-[36px] justify-center text-Bright_Color font-normal text-[18px] items-center"
+    >
+      <li class="hover:text-Marrom_White_03 transition-transform duration-500">
+        <a href="">Início</a>
+      </li>
+      <li
+        class="hover:text-Marrom_White_03 transition-transform duration-500 relative hover:text-Marrom_White_02 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-Marrom_White_03 before:transition-all before:duration-300 hover:before:w-full py-2"
+      >
+        <a href="">Nosso Café</a>
+      </li>
+      <li
+        class="hover:text-Marrom_White_03 transition-transform duration-500 relative hover:text-Marrom_White_02 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-Marrom_White_03 before:transition-all before:duration-300 hover:before:w-full py-2"
+      >
+        <a href="">Notícias</a>
+      </li>
+      <li
+        class="hover:text-Marrom_White_03 transition-transform duration-500 relative hover:text-Marrom_White_02 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-Marrom_White_03 before:transition-all before:duration-300 hover:before:w-full py-2"
+      >
+        <a href="">Contato</a>
+      </li>
+      <li
+        class="hover:text-Marrom_White_03 transition-transform duration-500 relative hover:text-Marrom_White_02 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-Marrom_White_03 before:transition-all before:duration-300 hover:before:w-full py-2"
+      >
+        <a href="">Cardápio</a>
+      </li>
+    </ul>
+
+    <!-- Botão -->
+    <button
+      class="hidden md:block bg-Marrom_White_02 text-Marrom_White_01 px-[32px] py-[8px] rounded-sm hover:bg-Marrom_Medium_02 transition-colors duration-600"
+    >
+      Seja um franqueado
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <ul
+    id="mobileMenu"
+    class="absolute top-full left-0 w-full bg-Marrom_Black_01 text-Bright_Color space-y-4 py-4 pl-6 hidden md:hidden"
+  >
+    <li class="hover:text-Marrom_White_03">
+      <a href="">Início</a>
+    </li>
+    <li class="hover:text-Marrom_White_03">
+      <a href="">Nosso Café</a>
+    </li>
+    <li class="hover:text-Marrom_White_03">
+      <a href="">Notícias</a>
+    </li>
+    <li class="hover:text-Marrom_White_03">
+      <a href="">Contato</a>
+    </li>
+    <li class="hover:text-Marrom_White_03">
+      <a href="">Cardápio</a>
+    </li>
+    <li>
       <button
         class="bg-Marrom_White_02 text-Marrom_White_01 px-[32px] py-[8px] rounded-sm hover:bg-Marrom_Medium_02 transition-colors duration-600"
       >
         Seja um franqueado
       </button>
-    </nav>
-  </header>
+    </li>
+  </ul>
+</header>
+
+<script>
+  const menuButton = document.getElementById("menuButton");
+  const navMenu = document.getElementById("navMenu");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuButton.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+
 
     <section id="banner" class="relative">
-        <img src="img/banner-principal-franquias.png" alt="" class="w-full h-[500px] bg-marrom_black_02 object-cover">
-        <div class="absolute top-[110px] left-[135px]">
-          <h2 class="text-marrom_white_01 text-[55px] font-bold leading-[65px] text-Marrom_White_01"><span class="text-[#F7AE1A]">Um café quentinho</span><br> aqui na Tiamate<br>
-            muda o dia.</h2>
-            <div class="flex gap-4">
-              <a href=""> <img src="img/Facebook.svg" alt=""></a>
-              <a href=""> <img src="img/Instagram.svg" alt=""></a>
-              <a href=""> <img src="img/Youtube.svg" alt=""></a>
-              <a href=""> <img src="img/LinkedIn.svg" alt=""></a>
-            </div>
-        </div>
-      </section>
-
-
-  <section id="quem-somos" class="flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-12 bg-white">
-    <!-- Texto -->
-    <div class="max-w-lg text-left space-y-6">
-      <p class="text-sm text-brown-600 font-medium text-Marrom_Medium_01">Para os amantes de café</p>
-      <h1 class="text-3xl md:text-5xl font-bold text-brown-800 text-Marrom_Medium_01">Quem Somos</h1>
-      <p class="text-sm md:text-base text-gray-700">
-        Com um modelo de negócio sólido e rentável, a Tiamate se destaca entre as melhores oportunidades de franquia pelas 4 razões que seguem:
-      </p>
-      <div class="flex items-start space-x-4">
-        <div class="flex-shrink-0 w-12 h-12 bg-brown-100 rounded-full flex items-center justify-center">
-            <box-icon name="chevron-right"></box-icon>
-            <img src="img/coffee-icon.svg" alt="">
-        </div>
-        <p class="text-gray-700">
-          Universidade corporativa que auxilia na capacitação operacional e desenvolvimento de habilidades gerenciais.
-        </p>
-      </div>
-      <!-- Botões -->
-      <div class="flex space-x-4">
-        <box-icon name='left-arrow-alt'></box-icon>
-        <div><box-icon name='right-arrow-alt'></box-icon></div>
-      </div>
-    </div>
-
-    <!-- Imagem -->
-    <div class="mt-8 md:mt-0 md:ml-10 w-full md:w-1/2">
-      <img 
-        src="img/cafe-franquias.png" 
-        alt="Copo de café Tiamate" 
-        class="rounded-md shadow-lg w-full"
+      <img
+        src="img/banner-principal-franquias.png"
+        alt=""
+        class="w-full h-[500px] bg-marrom_black_02 object-cover"
       />
-    </div>
-  </section>
+      <div class="absolute top-[110px] left-[135px]">
+        <h2
+          class="text-marrom_white_01 text-[55px] font-bold leading-[65px] text-Marrom_White_01"
+        >
+          <span class="text-[#F7AE1A]">Um café quentinho</span><br />
+          aqui na Tiamate<br />
+          muda o dia.
+        </h2>
+        <div class="flex gap-4">
+          <a href=""> <img src="img/Facebook.svg" alt="" /></a>
+          <a href=""> <img src="img/Instagram.svg" alt="" /></a>
+          <a href=""> <img src="img/Youtube.svg" alt="" /></a>
+          <a href=""> <img src="img/LinkedIn.svg" alt="" /></a>
+        </div>
+      </div>
+    </section>
 
-  <section class="">
-    <div>
-        <img src="img/banner-franquias.png" alt="">
+    <section
+      id="quem-somos"
+      class="flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-12 bg-white"
+    >
+      <!-- Texto -->
+      <div class="max-w-lg text-left space-y-6">
+        <p class="text-sm text-brown-600 font-medium text-Marrom_Medium_01">
+          Para os amantes de café
+        </p>
+        <h1
+          class="text-3xl md:text-5xl font-bold text-brown-800 text-Marrom_Medium_01"
+        >
+          Quem Somos
+        </h1>
+        <p class="text-sm md:text-base text-gray-700">
+          Com um modelo de negócio sólido e rentável, a Tiamate se destaca entre
+          as melhores oportunidades de franquia pelas 4 razões que seguem:
+        </p>
+        <div class="flex items-start space-x-4">
+          <div
+            class="flex-shrink-0 w-12 h-12 bg-brown-100 rounded-full flex items-center justify-center"
+          >
+            <box-icon name="chevron-right"></box-icon>
+            <img src="img/coffee-icon.svg" alt="" />
+          </div>
+          <p class="text-gray-700">
+            Universidade corporativa que auxilia na capacitação operacional e
+            desenvolvimento de habilidades gerenciais.
+          </p>
+        </div>
+        <!-- Botões -->
+        <div class="flex space-x-4">
+          <box-icon name="left-arrow-alt"></box-icon>
+          <div><box-icon name="right-arrow-alt"></box-icon></div>
+        </div>
+      </div>
+
+      <div class="mt-8 md:mt-0 md:ml-10 w-full md:w-1/2">
+        <img
+          src="img/cafe-franquias.png"
+          alt="Copo de café Tiamate"
+          class="rounded-md shadow-lg w-full"
+        />
+      </div>
+    </section>
+
+    <section
+      id="video"
+      class="relative h-[500px] w-full bg-cover bg-center bg-no-repeat"
+      style="background-image: url('img/photoshoot-tiamate-2.jpeg')"
+    >
+      <div
+        class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center px-4"
+      >
+        <div>
+          <img src="img/video.svg" alt="" />
+          <p class="text-Marrom_White_01 text-[18px] mt-4">Assistir agora</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="modelos-de-negocio" class="bg-[#F5EFEA] py-12 px-6">
+      <div
+        class="container mx-auto text-center flex gap-20 justify-center items-center flex-wrap"
+      >
+        <div
+          class="w-full md:w-[300px] h-[300px] bg-cover bg-center rounded-md shadow-lg"
+          style="background-image: url('img/tiamate-to-go.png')"
+        ></div>
+        <div>
+          <p class="text-[16px] md:text-[18px] text-Marrom_Medium_02">
+            A Tiamate oferece 2 modelos <br />
+            de franquia personalizados.
+          </p>
+          <h2
+            class="text-[24px] md:text-[32px] lg:text-[36px] font-bold text-Marrom_Medium_02 my-4"
+          >
+            Escolha a Tiamate <br />
+            ideal para você
+          </h2>
+        </div>
+        <div
+          class="flex flex-col md:flex-row justify-center items-center gap-8 mt-8"
+        >
+          <div
+            class="w-full md:w-[300px] h-[300px] bg-cover bg-center rounded-md shadow-lg"
+            style="background-image: url('img/tiamate-modelo-coffee.png')"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="lucrar"
+      class="relative h-[500px] w-full bg-cover bg-center bg-no-repeat"
+      style="background-image: url('img/photoshoot-tiamate.png')"
+    >
+      <div
+        class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center px-4"
+      >
+        <h2
+          class="text-Marrom_White_01 text-[24px] md:text-[32px] lg:text-[40px] font-bold leading-tight"
+        >
+          Quer lucrar com sua própria Tiamate?<br />
+          Seja um franqueado!
+        </h2>
+        <button
+          class="mt-6 bg-Marrom_White_02 hover:bg-Marrom_White_02 text-Marrom_Black_02 px-[32px] py-2 rounded-sm text-[16px] md:text-[16px] font-medium"
+        >
+          Mais Informações
+        </button>
+      </div>
+    </section>
+
+    <section
+      id="sucesso"
+      class="relative h-[500px] w-full bg-cover bg-center bg-no-repeat"
+      style="background-image: url('img/photoshoot-tiamate-2.jpeg')"
+    >
+      <div
+        class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center px-4"
+      >
+        <h2
+          class="text-Marrom_White_01 text-[24px] md:text-[32px] lg:text-[40px] font-bold leading-tight"
+        >
+          Se você procura um negócio de<br />sucesso, venha para Tiamte Coffee!
+        </h2>
+        <button
+          class="mt-6 bg-Marrom_White_02 hover:bg-Marrom_White_02 text-Marrom_Black_02 px-[32px] py-2 rounded-sm text-[16px] md:text-[16px] font-medium"
+        >
+          Mais Informações
+        </button>
+      </div>
+    </section>
+
+
+    <section id="depoimento" class="">
+      <div class="justify-center items-center w-[500px]">
+        <h1>Depoimentos de sucesso</h1>
+        <div class="bg-Marrom_White_02 rounded-full w-[200px] h-[200px]"></div>
+        <p>
+          "Antes de optar por ser uma franqueada Tiamate,analisei varias
+          franquias do mercado. Mas senti, já nas primeiras apresentações que o
+          objetivo do Grupo não era simplismente que eu abrisse mais uma loja, e
+          sim que eu me tornasse um parceiro de sucesso. O processo de procura
+          do ponto e abertura da loja foi muito pratico. A consultoria e os
+          treinamentos com o apoio dos diversos manuais da marca transcederam
+          minhas expectativas. Os resultados estão sendo excelentes e percebidos
+          por todos, sócios, funcionários e, principalmente, pelos clientes".
+        </p>
+        <div>
+                  <h6>Aquila Carvalho</h6>
+        <p>Franqueada - Unidade Salvador - BA</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-12 px-6">
+      <div class="container mx-auto flex flex-col lg:flex-row gap-8 justify-between items-center">
+        <!-- Texto -->
+        <div class="flex-1">
+          <h3 class="text-[18px] font-medium text-Marrom_Medium_02">Cafeteria</h3>
+          <h2 class="text-[36px] font-bold text-Marrom_Medium_02 my-4">Tiamate Coffee</h2>
+          <ul class="space-y-4 text-Marrom_Medium_02 text-[16px]">
+            <li class="flex items-start">
+              <span class="text-green-500 mr-2">✔</span>
+              <strong>Espaço:</strong> 30 a 45 m²
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-2">✔</span>
+              <strong>Faturamento Médio:</strong> R$ 40 MIL
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-2">✔</span>
+              <strong>Royalties:</strong> 5% do faturamento. <br>(Valor mínimo R$ 2.000,00)
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-2">✔</span>
+              <strong>Taxa de Marketing:</strong> 2% do faturamento
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-2">✔</span>
+              <strong>Ponto de Equilíbrio:</strong> 2 a 3 meses
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-2">✔</span>
+              <strong>Prazo de Retorno:</strong> 18 a 24 meses
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-2">✔</span>
+              <strong>Lucro Médio:</strong> 25%
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-2">✔</span>
+              <strong>Investimento total estimado:</strong> R$130 MIL
+            </li>
+          </ul>
+        </div>
+    
+        <!-- Imagens -->
+        <div class="flex-1 flex flex-col lg:flex-row gap-4 items-center lg:items-start">
+          <!-- Imagem Principal -->
+          <div id="mainImage" class="w-full lg:w-[300px] h-[300px] bg-cover bg-center rounded-md shadow-lg" 
+            style="background-image: url('img/img1.png');">
+          </div>
+    
+          <!-- Miniaturas -->
+          <div class="flex lg:flex-col gap-4">
+            <button 
+              class="w-[75px] h-[75px] bg-cover bg-center rounded-md shadow-md" 
+              style="background-image: url('img/img2.jpeg');"
+              onclick="changeImage('img/img2.jpeg')">
+            </button>
+            <button 
+              class="w-[75px] h-[75px] bg-cover bg-center rounded-md shadow-md" 
+              style="background-image: url('img/img3.jpeg');"
+              onclick="changeImage('img/img3.jpeg')">
+            </button>
+            <button 
+              class="w-[75px] h-[75px] bg-cover bg-center rounded-md shadow-md" 
+              style="background-image: url('img/imh4.jpeg');"
+              onclick="changeImage('img/imh4.jpeg')">
+            </button>
+            <button 
+              class="w-[75px] h-[75px] bg-cover bg-center rounded-md shadow-md" 
+              style="background-image: url('img/img5.jpeg');"
+              onclick="changeImage('img/img5.jpeg')">
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <script>
+      function changeImage(imageUrl) {
+        const mainImage = document.getElementById("mainImage");
+        mainImage.style.backgroundImage = `url(${imageUrl})`;
+      }
+    </script>
+
+<section class="bg-white py-12 px-6">
+  <div class="container mx-auto flex flex-col lg:flex-row gap-8">
+    <!-- Texto -->
+    <div class="flex-1">
+      <h3 class="text-[18px] font-medium text-Marrom_Medium_02">Cafeteria</h3>
+      <h2 class="text-[36px] font-bold text-Marrom_Medium_02 my-4">Tiamate Coffee</h2>
+      <ul class="space-y-4 text-Marrom_Medium_02 text-[16px]">
+        <li class="flex items-start">
+          <span class="text-green-500 mr-2">✔</span>
+          <strong>Espaço:</strong> 30 a 45 m²
+        </li>
+        <li class="flex items-start">
+          <span class="text-green-500 mr-2">✔</span>
+          <strong>Faturamento Médio:</strong> R$ 40 MIL
+        </li>
+        <li class="flex items-start">
+          <span class="text-green-500 mr-2">✔</span>
+          <strong>Royalties:</strong> 5% do faturamento. <br>(Valor mínimo R$ 2.000,00)
+        </li>
+        <li class="flex items-start">
+          <span class="text-green-500 mr-2">✔</span>
+          <strong>Taxa de Marketing:</strong> 2% do faturamento
+        </li>
+        <li class="flex items-start">
+          <span class="text-green-500 mr-2">✔</span>
+          <strong>Ponto de Equilíbrio:</strong> 2 a 3 meses
+        </li>
+        <li class="flex items-start">
+          <span class="text-green-500 mr-2">✔</span>
+          <strong>Prazo de Retorno:</strong> 18 a 24 meses
+        </li>
+        <li class="flex items-start">
+          <span class="text-green-500 mr-2">✔</span>
+          <strong>Lucro Médio:</strong> 25%
+        </li>
+        <li class="flex items-start">
+          <span class="text-green-500 mr-2">✔</span>
+          <strong>Investimento total estimado:</strong> R$130 MIL
+        </li>
+      </ul>
     </div>
+
+    <!-- Imagens -->
+    <div class="flex-1 flex flex-col lg:flex-row gap-4 items-center lg:items-start">
+      <!-- Imagem Principal -->
+      <div id="mainImage" class="w-full lg:w-[300px] h-[300px] bg-cover bg-center rounded-md shadow-lg" 
+        style="background-image: url('img/img1.png');">
+      </div>
+
+      <!-- Miniaturas -->
+      <div class="flex lg:flex-col gap-4">
+        <button 
+          class="w-[75px] h-[75px] bg-cover bg-center rounded-md shadow-md" 
+          style="background-image: url('img/img2.jpeg');"
+          onclick="changeImage('img/img2.jpeg')">
+        </button>
+        <button 
+          class="w-[75px] h-[75px] bg-cover bg-center rounded-md shadow-md" 
+          style="background-image: url('img/img3.jpeg');"
+          onclick="changeImage('img/img3.jpeg')">
+        </button>
+        <button 
+          class="w-[75px] h-[75px] bg-cover bg-center rounded-md shadow-md" 
+          style="background-image: url('img/imh4.jpeg');"
+          onclick="changeImage('img/imh4.jpeg')">
+        </button>
+        <button 
+          class="w-[75px] h-[75px] bg-cover bg-center rounded-md shadow-md" 
+          style="background-image: url('img/img5.jpeg');"
+          onclick="changeImage('img/img5.jpeg')">
+        </button>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="contato" class="flex h-screen">
-    <div class="flex-1 bg-Marrom_Black_02 p-4 md:pl-[135px] md:pt-[70px] md:pr-[70px]">
-      <h6 class="text-Marrom_White_01 text-[18px]">Entre em contato</h6>
-      <h2 class="text-Marrom_White_01 text-[50px] font-bold mb-[20px]">Abra sua Franquia</h2>
-      <p class="text-Marrom_White_01">Preencha o formulário abaixo que entraremos em contato com você o mais rápido
-        possível.</p>
-      <form class="mt-[20px] justify-center">
-        <div class="bg-Marrom_White_01 rounded-md px-[9px] py-[14px] flex gap-[9px] mb-[10px]">
-          <div class="bg-Marrom_White_02 w-[32px] h-[32px] flex justify-center items-center rounded-full">
-            <img src="img/icon1.svg" alt="nome">
-          </div>
-          <input type="text" placeholder="Nome e Sobrenome"
-            class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01">
+<script>
+  function changeImage(imageUrl) {
+    const mainImage = document.getElementById("mainImage");
+    mainImage.style.backgroundImage = `url(${imageUrl})`;
+  }
+</script>
+    
+
+    <section id="blog" class="mx-[150px] my-[150px]">
+      <h5 class="text-Marrom_White_03">Fique por dentro</h5>
+      <h1 class="text-[50px] font-bold text-Marrom_Medium_02">
+        Tiamate na Mídia
+      </h1>
+      <div
+        class="flex gap-4 justify-center items-center my-4 flex-col lg:flex-row"
+      >
+        <div class="w-[370px] space-y-2">
+          <img
+            src="img/blog-conheca-5-lugares.png"
+            alt="img card blog"
+            class=""
+          />
+          <p class="text-[24px] font-bold text-Marrom_Black_02">
+            Conheça cinco lugares no centro para ir com os amigos
+          </p>
+          <button
+            onclick=""
+            class="border w-full text-[16px] border-Marrom_White_03 text-Marrom_White_03 px-4 py-2 rounded"
+          >
+            Notícia completa
+          </button>
         </div>
-        <div class="bg-Marrom_White_01 rounded-md px-[9px] py-[14px] flex gap-[9px] mb-[10px]">
-          <div class="bg-Marrom_White_02 w-[32px] h-[32px] flex justify-center items-center rounded-full">
-            <img src="img/icon2.svg" alt="nome">
-          </div>
-          <input type="email" placeholder="email@exemplo.com"
-            class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01">
+
+        <div class="w-[370px] space-y-2">
+          <img
+            src="img/blog-conheca-5-lugares.png"
+            alt="img card blog"
+            class=""
+          />
+          <p class="text-[24px] font-bold text-Marrom_Black_02">
+            Conheça cinco lugares no centro para ir com os amigos
+          </p>
+          <button
+            onclick=""
+            class="border w-full text-[16px] border-Marrom_White_03 text-Marrom_White_03 px-4 py-2 rounded"
+          >
+            Notícia completa
+          </button>
         </div>
-        <div class="bg-Marrom_White_01 rounded-md px-[9px] py-[14px] flex gap-[9px] mb-[10px]">
-          <div class="bg-Marrom_White_02 w-[32px] h-[32px] flex justify-center items-center rounded-full">
-            <img src="img/icon3.svg" alt="nome">
-          </div>
-          <input id="telefone" type="text" placeholder="(00) 00000-0000"
-            class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01">
+        <div class="w-[370px] space-y-2">
+          <img
+            src="img/blog-conheca-5-lugares.png"
+            alt="img card blog"
+            class=""
+          />
+          <p class="text-[24px] font-bold text-Marrom_Black_02">
+            Conheça cinco lugares no centro para ir com os amigos
+          </p>
+          <button
+            onclick=""
+            class="border w-full text-[16px] border-Marrom_White_03 text-Marrom_White_03 px-4 py-2 rounded"
+          >
+            Notícia completa
+          </button>
         </div>
-        <div class="flex gap-[10px]">
-          <div class="flex-1 bg-Marrom_White_01 rounded-md px-[9px] py-[14px] flex gap-[9px] mb-[10px]">
-            <div class="bg-Marrom_White_02 w-[32px] h-[32px] flex justify-center items-center rounded-full">
-              <img src="img/icon4.svg" alt="nome">
+      </div>
+    </section>
+
+    <section id="contato" class="flex h-screen">
+      <div
+        class="flex-1 bg-Marrom_Black_02 p-4 md:pl-[135px] md:pt-[70px] md:pr-[70px]"
+      >
+        <h6 class="text-Marrom_White_01 text-[18px]">Entre em contato</h6>
+        <h2 class="text-Marrom_White_01 text-[50px] font-bold mb-[20px]">
+          Abra sua Franquia
+        </h2>
+        <p class="text-Marrom_White_01">
+          Preencha o formulário abaixo que entraremos em contato com você o mais
+          rápido possível.
+        </p>
+        <form class="mt-[20px] justify-center">
+          <div
+            class="bg-Marrom_White_01 rounded-md px-[9px] py-[14px] flex gap-[9px] mb-[10px]"
+          >
+            <div
+              class="bg-Marrom_White_02 w-[32px] h-[32px] flex justify-center items-center rounded-full"
+            >
+              <img src="img/icon1.svg" alt="nome" />
             </div>
-            <select id="lista_estados" class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01"
-              onchange="carregarCidades()">
-              <option disabled selected>UF</option>
-            </select>
+            <input
+              type="text"
+              placeholder="Nome e Sobrenome"
+              class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01"
+            />
           </div>
-          <div class="flex-1 bg-Marrom_White_01 rounded-md px-[9px] py-[14px] flex gap-[9px] mb-[10px]">
-            <div class="bg-Marrom_White_02 w-[32px] h-[32px] flex justify-center items-center rounded-full">
-              <img src="img/icon5.svg" alt="nome">
+          <div
+            class="bg-Marrom_White_01 rounded-md px-[9px] py-[14px] flex gap-[9px] mb-[10px]"
+          >
+            <div
+              class="bg-Marrom_White_02 w-[32px] h-[32px] flex justify-center items-center rounded-full"
+            >
+              <img src="img/icon2.svg" alt="nome" />
             </div>
-            <!-- <select id="lista_cidades" class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01">
+            <input
+              type="email"
+              placeholder="email@exemplo.com"
+              class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01"
+            />
+          </div>
+          <div
+            class="bg-Marrom_White_01 rounded-md px-[9px] py-[14px] flex gap-[9px] mb-[10px]"
+          >
+            <div
+              class="bg-Marrom_White_02 w-[32px] h-[32px] flex justify-center items-center rounded-full"
+            >
+              <img src="img/icon3.svg" alt="nome" />
+            </div>
+            <input
+              id="telefone"
+              type="text"
+              placeholder="(00) 00000-0000"
+              class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01"
+            />
+          </div>
+          <div class="flex gap-[10px]">
+            <div
+              class="flex-1 bg-Marrom_White_01 rounded-md px-[9px] py-[14px] flex gap-[9px] mb-[10px]"
+            >
+              <div
+                class="bg-Marrom_White_02 w-[32px] h-[32px] flex justify-center items-center rounded-full"
+              >
+                <img src="img/icon4.svg" alt="nome" />
+              </div>
+              <select
+                id="lista_estados"
+                class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01"
+                onchange="carregarCidades()"
+              >
+                <option disabled selected>UF</option>
+              </select>
+            </div>
+            <div
+              class="flex-1 bg-Marrom_White_01 rounded-md px-[9px] py-[14px] flex gap-[9px] mb-[10px]"
+            >
+              <div
+                class="bg-Marrom_White_02 w-[32px] h-[32px] flex justify-center items-center rounded-full"
+              >
+                <img src="img/icon5.svg" alt="nome" />
+              </div>
+              <!-- <select id="lista_cidades" class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01">
               <option disabled selected>Cidade</option>
             </select> -->
-            <input list="lista_cidades" type="text" placeholder="Cidade"
-              class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01">
-            <datalist id="lista_cidades"></datalist>
+              <input
+                list="lista_cidades"
+                type="text"
+                placeholder="Cidade"
+                class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01"
+              />
+              <datalist id="lista_cidades"></datalist>
+            </div>
           </div>
-        </div>
-        <div class="bg-Marrom_White_01 rounded-md px-[9px] py-[14px] flex gap-[9px] mb-[10px]">
-          <div class="bg-Marrom_White_02 w-[32px] h-[32px] flex justify-center items-center rounded-full">
-            <img src="img/icon6.svg" alt="nome">
+          <div
+            class="bg-Marrom_White_01 rounded-md px-[9px] py-[14px] flex gap-[9px] mb-[10px]"
+          >
+            <div
+              class="bg-Marrom_White_02 w-[32px] h-[32px] flex justify-center items-center rounded-full"
+            >
+              <img src="img/icon6.svg" alt="nome" />
+            </div>
+            <select
+              class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01"
+            >
+              <option disabled selected>Como conheceu a Tiamate?</option>
+              <option>Facebook</option>
+              <option>Instagram</option>
+              <option>Linkedin</option>
+              <option>Google</option>
+              <option>Outros</option>
+            </select>
           </div>
-          <select class="flex-1 bg-transparent outline-none placeholder:text-marrom_black_01">
-            <option disabled selected>Como conheceu a Tiamate?</option>
-            <option>Facebook</option>
-            <option>Instagram</option>
-            <option>Linkedin</option>
-            <option>Google</option>
-            <option>Outros</option>
-          </select>
-        </div>
-        <button
-          class="w-full bg-Marrom_White_02 hover:bg-marrom_medium_01 text-marrom_black_02 duration-200 px-[9px] py-[14px] rounded-md font-semibold">Enviar
-          Cadastro</button>
-      </form>
-    </div>
-    <img src="img/fachada-tiamate.png" alt="fachada tiamate" class="hidden md:block">
-  </section>
+          <button
+            class="w-full bg-Marrom_White_02 hover:bg-marrom_medium_01 text-marrom_black_02 duration-200 px-[9px] py-[14px] rounded-md font-semibold"
+          >
+            Enviar Cadastro
+          </button>
+        </form>
+      </div>
+      <img
+        src="img/fachada-tiamate.png"
+        alt="fachada tiamate"
+        class="hidden md:block"
+      />
+    </section>
 
-      <footer>
-        <div class="bg-Marrom_Black_01 text-Marrom_White_01 py-6">
-          <!-- Header -->
-          <div class="flex flex-col items-center sm:flex-row sm:justify-between px-6 sm:px-12 gap-4">
-            <!-- Logo -->
-            <div class="flex items-center gap-2">
-              <img src="img/Logo_Horizontal_01.svg" alt="Tiamate Coffee" class="h-10">
-            </div>
-            <!-- Menu -->
-            <nav class="mt-4 sm:mt-0">
-              <ul class="flex gap-4 sm:gap-8 text-sm sm:text-base">
-                <li><a href="#" class="hover:text-Marrom_White_02">Início</a></li>
-                <li><a href="#" class="hover:text-Marrom_White_02">Nosso Café</a></li>
-                <li><a href="#" class="hover:text-Marrom_White_02">Notícias</a></li>
-                <li><a href="#" class="hover:text-Marrom_White_02">Contato</a></li>
-                <li><a href="#" class="hover:text-Marrom_White_02">Cardápio</a></li>
-                <li><a href="#" class="hover:text-Marrom_White_02">Franquia</a></li>
-              </ul>
-            </nav>
+    <footer>
+      <div class="bg-Marrom_Black_01 text-Marrom_White_01 py-6">
+        <!-- Header -->
+        <div
+          class="flex flex-col items-center sm:flex-row sm:justify-between px-6 sm:px-12 gap-4"
+        >
+          <!-- Logo -->
+          <div class="flex items-center gap-2">
+            <img
+              src="img/Logo_Horizontal_01.svg"
+              alt="Tiamate Coffee"
+              class="h-10"
+            />
           </div>
-        
-          <div class="border-t border-Marrom_White_02 my-8 mx-8 sm:mx-12"></div>
-        
-          <div class="flex flex-col sm:flex-row items-center sm:justify-between px-6 sm:px-12">
-      
-            <div class="flex flex-col items-center sm:items-start">
-      
-              <div class="flex gap-4">
-                <p class="mb-2 text-sm">Curta e <br>Compartilhe</p>
-                <a href="#" class="p-2 bg-Marrom_Black_01 rounded-full">
-                  <img src="img/Facebook.svg" alt="Facebook" class="h-8 w-8">
-                </a>
-                <a href="#" class="p-2 bg-Marrom_Black_01 rounded-full">
-                  <img src="img/Instagram.svg" alt="Instagram" class="h-8 w-8">
-                </a>
-                <a href="#" class="p-2 bg-Marrom_Black_01 rounded-full">
-                  <img src="img/Youtube.svg" alt="YouTube" class="h-8 w-8">
-                </a>
-                <a href="#" class="p-2 bg-Marrom_Black_01 rounded-full">
-                  <img src="img/LinkedIn.svg" alt="LinkedIn" class="h-8 w-8">
-                </a>
-              </div>
+          <!-- Menu -->
+          <nav class="mt-4 sm:mt-0">
+            <ul class="flex gap-4 sm:gap-8 text-sm sm:text-base">
+              <li><a href="#" class="hover:text-Marrom_White_02">Início</a></li>
+              <li>
+                <a href="#" class="hover:text-Marrom_White_02">Nosso Café</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-Marrom_White_02">Notícias</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-Marrom_White_02">Contato</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-Marrom_White_02">Cardápio</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-Marrom_White_02">Franquia</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="border-t border-Marrom_White_02 my-8 mx-8 sm:mx-12"></div>
+
+        <div
+          class="flex flex-col sm:flex-row items-center sm:justify-between px-6 sm:px-12"
+        >
+          <div class="flex flex-col items-center sm:items-start">
+            <div class="flex gap-4">
+              <p class="mb-2 text-sm">Curta e <br />Compartilhe</p>
+              <a href="#" class="p-2 bg-Marrom_Black_01 rounded-full">
+                <img src="img/Facebook.svg" alt="Facebook" class="h-8 w-8" />
+              </a>
+              <a href="#" class="p-2 bg-Marrom_Black_01 rounded-full">
+                <img src="img/Instagram.svg" alt="Instagram" class="h-8 w-8" />
+              </a>
+              <a href="#" class="p-2 bg-Marrom_Black_01 rounded-full">
+                <img src="img/Youtube.svg" alt="YouTube" class="h-8 w-8" />
+              </a>
+              <a href="#" class="p-2 bg-Marrom_Black_01 rounded-full">
+                <img src="img/LinkedIn.svg" alt="LinkedIn" class="h-8 w-8" />
+              </a>
             </div>
-        
-      
-            <div class="mt-6 sm:mt-0 text-center sm:text-right">
-              <p class="text-sm">&copy; 2021 Tiamate - Todos os Direitos Reservados</p>
-            </div>
-        
-      
-            <div class="mt-6 sm:mt-0">
-              <img src="img/grupo-gracom.svg" alt="Grupo Gracom" class="h-10">
-            </div>
+          </div>
+
+          <div class="mt-6 sm:mt-0 text-center sm:text-right">
+            <p class="text-sm">
+              &copy; 2021 Tiamate - Todos os Direitos Reservados
+            </p>
+          </div>
+
+          <div class="mt-6 sm:mt-0">
+            <img src="img/grupo-gracom.svg" alt="Grupo Gracom" class="h-10" />
           </div>
         </div>
-        </footer>
-        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </body>
+</html>
