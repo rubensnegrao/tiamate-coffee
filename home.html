@@ -36,53 +36,104 @@
     </style>
   </head>
   <body>
+
+
     <header
-      class="bg-Marrom_Black_01 flex px-[150px] items-center justify-between top-0 sticky z-50"
-    >
-      <nav
-        class="flex items-center justify-between w-full space-x-4 container mx-auto"
+    class="bg-Marrom_Black_01 flex items-center justify-between top-0 sticky z-50 px-4 md:px-[150px] py-4"
+  >
+    <nav class="flex items-center justify-between w-full container mx-auto">
+      <!-- Logo -->
+      <a href="">
+        <img src="img/Logo_Horizontal_01.svg" alt="Logo" class="w-32 md:w-auto" />
+      </a>
+  
+      <!-- Botão de Menu (mobile) -->
+      <button
+        id="menuButton"
+        class="md:hidden text-Bright_Color hover:text-Marrom_White_03 focus:outline-none"
       >
-        <ul
-          class="flex space-x-[36px] justify-center text-Bright_Color p-5 font-normal text-[18px] items-center"
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          class="w-8 h-8"
         >
-          <li
-            class="hover:text-Marrom_White_03 transition-transform duration-500"
-          >
-            <a href=""><img src="img/Logo_Horizontal_01.svg" alt="" /></a>
-          </li>
-          <li
-            class="hover:text-Marrom_White_03 transition-transform duration-500 relative hover:text-Marrom_White_02 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-Marrom_White_03 before:transition-all before:duration-300 hover:before:w-full"
-          >
-            <a href="">Início</a>
-          </li>
-          <li
-            class="hover:text-Marrom_White_03 transition-transform duration-500 relative hover:text-Marrom_White_02 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-Marrom_White_03 before:transition-all before:duration-300 hover:before:w-full"
-          >
-            <a href="">Nosso Café</a>
-          </li>
-          <li
-            class="hover:text-Marrom_White_03 transition-transform duration-500 relative hover:text-Marrom_White_02 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-Marrom_White_03 before:transition-all before:duration-300 hover:before:w-full"
-          >
-            <a href="">Notícias</a>
-          </li>
-          <li
-            class="hover:text-Marrom_White_03 transition-transform duration-500 relative hover:text-Marrom_White_02 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-Marrom_White_03 before:transition-all before:duration-300 hover:before:w-full"
-          >
-            <a href="">Contato</a>
-          </li>
-          <li
-            class="hover:text-Marrom_White_03 transition-transform duration-500 relative hover:text-Marrom_White_02 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-Marrom_White_03 before:transition-all before:duration-300 hover:before:w-full"
-          >
-            <a href="">Cardápio</a>
-          </li>
-        </ul>
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16m-7 6h7"
+          />
+        </svg>
+      </button>
+  
+      <ul
+        id="navMenu"
+        class="hidden md:flex space-x-[36px] justify-center text-Bright_Color font-normal text-[18px] items-center"
+      >
+        <li class="hover:text-Marrom_White_03 transition-transform duration-500">
+          <a href="">Início</a>
+        </li>
+        <li
+          class="hover:text-Marrom_White_03 transition-transform duration-500 relative hover:text-Marrom_White_02 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-Marrom_White_03 before:transition-all before:duration-300 hover:before:w-full py-2"
+        >
+          <a href="">Nosso Café</a>
+        </li>
+        <li
+          class="hover:text-Marrom_White_03 transition-transform duration-500 relative hover:text-Marrom_White_02 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-Marrom_White_03 before:transition-all before:duration-300 hover:before:w-full py-2"
+        >
+          <a href="">Notícias</a>
+        </li>
+        <li
+          class="hover:text-Marrom_White_03 transition-transform duration-500 relative hover:text-Marrom_White_02 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-Marrom_White_03 before:transition-all before:duration-300 hover:before:w-full py-2"
+        >
+          <a href="">Contato</a>
+        </li>
+        <li
+          class="hover:text-Marrom_White_03 transition-transform duration-500 relative hover:text-Marrom_White_02 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[3px] before:bg-Marrom_White_03 before:transition-all before:duration-300 hover:before:w-full py-2"
+        >
+          <a href="">Cardápio</a>
+        </li>
+      </ul>
+  
+    
+      <button
+        class="hidden md:block bg-Marrom_White_02 text-Marrom_White_01 px-[32px] py-[8px] rounded-sm hover:bg-Marrom_Medium_02 transition-colors duration-600"
+      >
+        Seja um franqueado
+      </button>
+    </nav>
+  
+    
+    <ul
+      id="mobileMenu"
+      class="absolute top-full left-0 w-full bg-Marrom_Black_01 text-Bright_Color space-y-4 py-4 pl-6 hidden md:hidden"
+    >
+      <li class="hover:text-Marrom_White_03">
+        <a href="">Início</a>
+      </li>
+      <li class="hover:text-Marrom_White_03">
+        <a href="">Nosso Café</a>
+      </li>
+      <li class="hover:text-Marrom_White_03">
+        <a href="">Notícias</a>
+      </li>
+      <li class="hover:text-Marrom_White_03">
+        <a href="">Contato</a>
+      </li>
+      <li class="hover:text-Marrom_White_03">
+        <a href="">Cardápio</a>
+      </li>
+      <li>
         <button
-          class="bg-Marrom_White_02 text-Marrom_White_01 px-[32px] py-[8px] rounded-sm hover:bg-Marrom_Medium_02 transition-colors duration-600"
+          class="bg-Marrom_White_02 text-Marrom_White_01 px-[32px] py-[8px] rounded-sm hover:bg-Marrom_Black_02 transition duration-300"
         >
           Seja um franqueado
         </button>
-      </nav>
-    </header>
+      </li>
+    </ul>
+  </header>
 
         <section id="banner" class="relative">
       <img src="img/Banner_principal.png" alt="" class="w-full h-[500px] bg-marrom_black_02 object-cover">
@@ -175,39 +226,14 @@
       </div>
     </section>
 
-    <section id="video" class="">
-      <h1 class=" text-2xl md:text-4xl font-bold text-Marrom_Black_02 text-left px-4 mb-6">
-        Coisas boas acontecem àqueles <br> que gostam de café
-      </h1>    
-      <div class="relative overflow-hidden rounded-lg shadow-lg aspect-video">
-        <iframe
-          class="absolute top-0 left-0 w-full h-full p-4 rounded-lg"
-          src="https://www.youtube.com/embed/RWCP7z8ufiA?si=P7JhHxFhV6T6vb5I"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </section>
+    <section class="w-full flex-1 flex flex-col">
+      <div class="w-full flex-1 flex flex-col justify-center items-center ">
+        <h2 class="font-bold text-[40px] text-marrom_medium_01 flex flex-col justify-start items-start mt-32 mb-20 mr-[450px]">Coisas boas acontecem àqueles <br> que gostam de café</h2>
+        <iframe width="1045" height="600" src="https://www.youtube.com/embed/RWCP7z8ufiA?si=khU9lkCUKkuNL-Cz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rounded-lg"></iframe>
+    
+     </section>
 
-    <!-- <section id="banner2" class="relative h-full">
-      <div
-        class="absolute top-1/2 left-[150px] transform -translate-y-1/2 text-left"
-      >
-        <h1 class="text-Marrom_Medium_01 font-semibold text-[50px]">
-          Café autêntico
-        </h1>
-        <p class="text-[36px] text-Marrom_White_01">
-          Chegou nosso café! <br />
-          Direto da fazenda.
-        </p>
-      </div>
-      <img class="w-full h-full" src="img/banner-autentico.png" alt="" />
-    </section> -->
-
-    <section id="banner2" class="relative">
+    <!-- <section id="banner2" class="relative">
       <img src="img/banner-autentico.png" alt="" class="w-full h-[500px] bg-marrom_black_02 object-cover">
       <div class="absolute top-[110px] left-[135px]">
         <h2 class="text-marrom_white_01 text-[55px] leading-[65px] text-Marrom_White_01"><span class="text-[#F7AE1A] font-bold">café autêntico</span><br>Chegou nosso café!<br>
@@ -224,7 +250,7 @@
           </h1>
         </div>
         <button
-          class="flex truncate items-center space-x-[16px] text-Marrom_Medium_02 uppercase font-bold"
+          class="flex items-center space-x-[16px] text-Marrom_Medium_02 uppercase font-bold"
         >
           <a href="https://www.instagram.com/tiamatefortaleza/">Veja mais</a>
           <img src="img/Instagram.svg" alt="" />
@@ -275,27 +301,55 @@
         </div>
         <div id="detalhe-instagram" class="h-[300px] w-full bg-Marrom_White_01 flex items-end absolute -z-50"></div>
       </div>
-    </section>
+    </section> -->
+
+    <section class="bg-white mt-28">
+      <div class="container mx-auto p-4">
+        <div class="flex justify-between items-center mb-4">
+         <div>
+          <p class="text-sm text-marrom_black_02 mb-3">
+           Para você e seus amigos
+          </p>
+          <h1 class="text-5xl font-bold text-marrom_medium_01 mb-14">
+           Ambiente agradável
+          </h1>
+         </div>
+         <div class="flex items-center space-x-2">
+          <span class="text-lg text-marrom_black_02 ml-3">
+           Veja mais
+          </span>
+          <img src="img/Instagram.svg" alt="logo 2 instagran" class="">
+         </div>
+        </div>
+        <div class="grid grid-cols-3">
+         <div class="">
+          <img src="img/instagram-1.jpeg" alt="garota com um drink" class="w-[360px] h-[360px] object-cover" />
+         </div>
+         <div class="">
+          <img src="img/instagram-2.jpeg" alt="garoto rindo e com um drink" class="w-[360px] h-[360px] object-cover" />
+         </div>
+         <div class="">
+          <img src="img/instagram-3.jpeg" alt="garota bebendo o drink" class="w-[360px] h-[360px] object-cover" />
+         </div>
+         <div class="">
+          <img src="img/instagram-4.jpeg" alt="homem sentando" class="w-[360px] h-[360px] object-cover"/>
+         </div>
+         <div class="">
+          <img src="img/instagram-5.jpeg" alt="garota com drink rindo" class="w-[360px] h-[360px] object-cover"/>
+         </div>
+         <div class="">
+          <img src="img/instagram-6.jpeg" alt="garoto sentado com um drink" class="w-[360px] h-[360px] object-cover"/>
+         </div>
+        </div>
+     </section>
+    
 
     <section id="cardapio" class="bg-Marrom_White_01 h-[500px] w-full flex items-center justify-center">
       <div>
         <div class="text-center justify-center items-center my-16">
           <h6 class="text-Marrom_Black_01">Confira nosso</h6>
           <h1 class="text-[50px] font-bold text-Marrom_Medium_01">Cardápio</h1>
-        <!-- </div>
-        <div class="flex justify-center items-center">
-          <box-icon name='chevron-left'></box-icon>
-          <div class="bg-transparent w-[200px] h-[280px]">
-            <img src="img/Bebidas/coockies.png" alt="" />
-          </div>
-          <div class="bg-transparent w-[200px] h-[280px]">
-            <img src="img/Bebidas/frape-morango.png" alt="" />
-          </div>
-          <div class="bg-transparent w-[200px] h-[280px] flex">
-            <img src="img/Bebidas/chocolate.png" alt="" />
-          <box-icon name='chevron-right'></box-icon>
-          </div>
-        </div> -->
+
         <div class="flex items-center justify-center space-x-4">
           <!-- Ícone à esquerda -->
           <div class="flex items-center">
@@ -321,17 +375,7 @@
         <button class="py-[8px] px-[64px] font-semibold bg-Marrom_White_03 text-Marrom_Black_01 rounded-sm py-[8px] px-[64px] bg-Marrom_Black_02 text-Marrom_White_01 hover:bg-Marrom_Medium_01 transition-colors duration-300">Veja mais</button>
       </div>
     </section>
-
-    <!-- <section id="franquias" class="bg-Marrom_Black_02 flex">
-      <div>
-        <div class="w-[50%]">
-          <h6 class="text-[16px] text-Marrom_White_03">Entre em contato</h6>
-          <h1 class="text-[50px] font-bold text-Marrom_White_01">Abra sua franquia</h1>
-          <h6 class="text-[16px] text-Marrom_White_03">Preencha o formulário abaixo que entraremos em contato com você o mais rápido possível.</h6>
-        </div>
-        <img src="img/img-franquias.png" alt="" class="">
-      </div>
-    </section> -->
+    
 
     <section id="contato" class="flex h-screen">
       <div class="flex-1 bg-Marrom_Black_02 p-4 md:pl-[135px] md:pt-[70px] md:pr-[70px]">
@@ -529,37 +573,6 @@
     </div>
   </section>
 
-  <!-- <footer class="flex justify-between bg-Marrom_Black_01">
-      <img src="img/Logo_Horizontal_01.svg" alt="">
-      <div class="gap-4 flex text-Marrom_White_01">
-        <a href="">Início</a>
-        <a href="">Nosso café</a>
-        <a href="">Notícias</a>
-        <a href="">Contato</a>
-        <a href="">Cardápio</a>
-        <a href="">Franquia</a>
-      </div>
-      <div class="border-t border-Marrom_White_03 my-6 mx-6 sm:mx-12"></div>
-      <div class="flex flex-col sm:flex-row items-center sm:justify-between px-6 sm:px-12"> -->
-        <!-- Social Media -->
-        <!-- <div class="flex flex-col items-center sm:items-start">
-          <p class="mb-2 text-sm">Curta e Compartilhe</p>
-          <div class="flex gap-4">
-            <a href="#" class="p-2 bg-[#a87a5f] rounded-full">
-              <img src="img/Facebook.svg" alt="Facebook" class="h-5">
-            </a>
-            <a href="#" class="p-2 bg-[#a87a5f] rounded-full">
-              <img src="img/Instagram.svg" alt="Instagram" class="h-5">
-            </a>
-            <a href="#" class="p-2 bg-[#a87a5f] rounded-full">
-              <img src="img/Youtube.svg" alt="YouTube" class="h-5">
-            </a>
-            <a href="#" class="p-2 bg-[#a87a5f] rounded-full">
-              <img src="img/LinkedIn.svg" alt="LinkedIn" class="h-5">
-            </a>
-          </div>
-        </div>
-  </footer> -->
 <footer>
   <div class="bg-Marrom_Black_01 text-Marrom_White_01 py-6">
     <!-- Header -->

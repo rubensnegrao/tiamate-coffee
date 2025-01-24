@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Café</title>
+
+    <link rel="shortcut icon" href="./img/logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            marrom_black_01: '#292625',
+            marrom_black_02: '#3B2416',
+            marrom_medium_01: '#A97744',
+            marrom_medium_02: '#64221D',
+            marrom_white_01: '#F5E7DA',
+            marrom_white_00: '#E7E1DF',
+            marrom_white_02: '#C7794A',
+            marrom_white_03: '#CF9A5A',
+            bright_color: '#FDF5E3',
+            amarelo_color: '#F7AE1A',
+
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="w-full bg-[#292625] py-9 px-14">
+        <nav class="w-full hidden sm:flex items-center space-x-6">
+          <div class="container mx-auto max-w-[1300px] flex justify-between items-center">
+            <div class="flex items-center">
+              <img src="./img/Logo_Horizontal_01.png" alt="logo do Tiamate" class="mr-14">
+                <ul class="flex items-center *:leading-5 gap-11">
+                    <li><a href="#" class="text-marrom_white_01 hover:text-amarelo_color duration 200">Início</a></li>
+                    <li><a href="#" class="text-marrom_white_01 hover:text-amarelo_color duration 200">Nosso Café</a></li>
+                    <li><a href="#" class="text-marrom_white_01 hover:text-amarelo_color duration 200">Notícias</a></li>
+                    <li><a href="#" class="text-marrom_white_01 hover:text-amarelo_color duration 200">Contato</a></li>
+                    <li><a href="#" class="text-marrom_white_01 hover:text-amarelo_color duration 200">Cardápio</a></li>
+                </ul>
+            </div>
+            <div>
+              <button class="text-white py-2 px-4 bg-marrom_white_02 rounded-md hover:bg-orange-700 hover:scale-105 duration-200">Seja um Franqueado</button>
+            </div> 
+          </div>
+        </nav>
+       </header>
+    
+       <section class="w-full py-32 bg-[url('./img/banner-nscf.png')] bg-no-repeat bg- px-2">
+        <div class="w-full text-5xl font-bold lg:text-4xl max-w-[1300px] ">
+          <h1 class="text-white pl-5">Mais que sabor,<br> sentimentos!</h1>
+          <div class="flex gap-5 pt-7 pl-4">
+            <a href="#"><img src="./img/logo-face.png" alt="logo facebook" class="hover:scale-110 duration-200"></a>
+            <a href="#"><img src="./img/logo-insta.png" alt="logo instagran"class="hover:scale-110 duration-200"></a>
+            <a href="#"><img src="./img/logo-yt.png" alt="logo youtube" class="hover:scale-110 duration-200"></a>
+            <a href="#"><img src="./img/logo-link.png" alt="logo linkedin"class="hover:scale-125 duration-200"></a>
+          </div>
+        </div>
+       </section>
+
+       <!-- COLHEITA -->
+
+       <section class="bg-white flex items-center w-full justify-center mt-28">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-center">
+             <div class="md:w-1/2 p-4">
+              <h1 class="text-5xl font-bold border-l-marrom_medium_01 leading-[54px] text-marrom_medium_01 mb-4">
+               Colheita
+              </h1>
+              <p class="text-marrom_black_02 mb-4">
+               A colheita acontece quando a maioria dos frutos já estão maduros. Tudo começa com uma meticulosa seleção das sementes de café. Elas são escolhidas, plantadas e mantidas em viveiros especiais, onde dão origem às mudas.
+              </p>
+              <p class="text-marrom_black_02">
+               As plantinhas passam por diversas etapas de crescimento e quando alcançam de quatro a seis pares de folhas em seus galhos, são levadas para os solos que abrigarão o cafeezal.
+              </p>
+             </div>
+             <div class="md:w-1/2 p-4">
+              <img src="./img/colheita.png" style=" width: 570px; height: 450px;" alt="Pessoa numa plantação colhendo café" class="rounded-md"/>
+             </div>
+            </div>
+       </section>
+
+       <!-- TORRAGEM -->
+
+       <section class="bg-marrom_white_00 flex items-center justify-center mt-28">
+        <div class="md:w-1/2 p-4 min-h-[570px]">
+            <img src="./img/torragem.png" alt="Grãos de café e torragem de café" class=" rounded-md mt-28 ml-28"/>
+           </div>
+          </div>
+          <div class="flex flex-col md:flex-row items-center justify-center">
+            <div class="md:w-1/2 p-4">
+             <h1 class="text-5xl font-bold border-l-marrom_medium_01 leading-[54px] text-marrom_medium_01 mb-4">
+                Torragem
+             </h1>
+             <p class="text-marrom_black_02 mb-4">
+                Este procedimento é todo controlado por operadores à distância. Quando o café alcança a temperatura de 140°C, acontecem interações entre as proteínas, gorduras e açúcares presentes nele. 
+             </p>
+             <p class="text-marrom_black_02">
+                Cada café possui uma curva de torra, então, a temperatura 
+                e o tempo podem variar. Secos, os grãos descansam por três
+                horas e perdem gás carbônico. Em seguida, estão prontos
+                para serem pesados e armazenados.
+             </p>
+            </div>
+       </section>
+
+       <!-- MOAGEM -->
+       <section class="bg-white flex items-center justify-center mt-28">
+        <div class="container  mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-center">
+             <div class="md:w-1/2 p-4">
+              <h1 class="text-5xl font-bold border-l-marrom_medium_01 leading-[54px] text-marrom_medium_01 mb-4">
+                Moagem
+              </h1>
+              <p class="text-marrom_black_02 mb-4">
+                Ela é feita através da combinação de diversos tipos de café. Esta “mistura” varia de acordo com o perfil do consumidor, podendo ser um produto gourmet, que leva toques mais suaves; do tipo forte, que é mais amargo e menos ácido; ou até mesmo aromático, que conta com sabores adicionais. 
+              </p>
+              <p class="text-marrom_black_02">
+                A mistura é preparada mecanicamente. Então, ela é encaminhada para um rolo mecânico, que quebrará os grãos, até chegar à granulometria ideal do produto. Depois da moagem, o café deve descansar por três horas para liberar mais gás carbônico.
+              </p>
+             </div>
+             <div class="max-w-lg md:w-1/2 p-4 ">
+              <img src="./img/moagem.png" style="" alt="Grãos de café e café moido" class="rounded-md"/>
+             </div>
+            </div>
+       </section>
+
+       <!-- CLASSIFICACAO -->
+
+       <section class="bg-marrom_white_00 flex items-center justify-center mt-28">
+        <div class="md:w-1/2 p-4 min-h-[570px]">
+            <img src="./img/classificacao.png" alt="Vários tipos de café" class=" rounded-md mt-28 ml-28"/>
+           </div>
+          </div>
+          <div class="flex flex-col md:flex-row items-center justify-center">
+            <div class="md:w-1/2 p-4">
+             <h1 class="text-5xl font-bold border-l-marrom_medium_01 leading-[54px] text-marrom_medium_01 mb-4">
+                Classificação
+             </h1>
+             <p class="text-marrom_black_02 mb-4">
+                Para que os grãos sejam armazenados, eles passam por “testes”, que os classificarão de acordo com a qualidade. Depois de moídos, os grãos são colocados em um aparelho que irá enviar raios infravermelhos ao pó de café.  
+             </p>
+             <p class="text-marrom_black_02">
+                De acordo com a luminescência refletida, o produto
+                é classificado em números, que apontam uma variedade
+                mais fraca ou mais forte.
+             </p>
+            </div>
+       </section>
+
+       <!-- DEPOIMENTOS -->
+        <section></section>
+        
+       <!-- ABRA SUA FRANQUIA -->
+
+       <section></section>
+
+       <!-- footer -->
+
+   <header class="bg-marrom_black_01">
+    <div class="container mx-auto flex justify-between items-center">
+     <div class="flex items-center mt-12 mb-">
+      <img src="./img/Logo_Horizontal_01.png" alt="Tiamate logo" class="mr-3" height="50"/>
+     </div>
+     <nav class="space-x-6 text-white mt-12">
+      <a class="hover:text-yellow-500" href="#">
+       Início
+      </a>
+      <a class="hover:text-yellow-500" href="#">
+       Nosso Café
+      </a>
+      <a class="hover:text-yellow-500" href="#">
+       Notícias
+      </a>
+      <a class="hover:text-yellow-500" href="#">
+       Contato
+      </a>
+      <a class="hover:text-yellow-500" href="#">
+       Cardápio
+      </a>
+      <a class="hover:text-yellow-500" href="#">
+       Franquia
+      </a>
+     </nav>
+    </div>
+   </header>
+   <footer class="bg-marrom_black_01 py-2 ">
+    <hr class="border-t border-yellow-500 my-9"/>
+    <div class="container mx-auto flex justify-between items-center mb-14">
+     <div class="flex items-center space-x-4">
+      <span class="text-marrom_white_01 mr-8">
+       Curta e <br>Compartilhe
+      </span>
+      <a class="text-orange-500 hover:text-yellow-500" href="#">
+        <img src="./img/logo-face.png" alt="logo facebook" class="w-6">
+      </a>
+      <a class="text-orange-500 hover:text-yellow-500" href="#">
+       <img src="./img/logo-insta.png" alt="logo instagram" class="w-6">
+      </a>
+      <a class="text-orange-500 hover:text-yellow-500" href="#">
+       <img src="./img/logo-yt.png" alt="logo do youtube" class="w-6">
+      </a>
+      <a class="text-orange-500 hover:text-yellow-500" href="#">
+       <img src="./img/logo-link.png" alt="logo do linkedin" class="w-6">
+      </a>
+     </div>
+     <div class="text-marrom_medium_01 text-sm">
+      <span class="text-l">
+       © 2023 Tiamate - Todos os Direitos Reservados
+      </span>
+      <img src="./img/logo-grupo.png" alt="Grupo logo" class="inline-block ml-8 w-24"/>
+     </div>
+    </div>
+   </footer>
+       
+</body>
+</html>
+
